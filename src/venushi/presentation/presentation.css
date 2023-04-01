@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900");
+
+#bgvideo {
+    
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    overflow: hidden;
+    filter: blur(2px);   
+}
+
+h1
+{
+    color: #830b0b;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+table{
+    padding: 80px;
+    position: relative;
+        }
+
+        th{
+            font-size: 20px;
+        }
+        tr ,th, td{
+            padding: 0 50px;
+        }
+
+        td{
+            font-size: 18px;
+        }
+
+        h1{
+            font-size: 50px;
+        }
+        #displaySeconds
+{   
+    padding: 10px;
+    border-radius: 20px 20px 20px 20px;
+    background: gainsboro;   
+    position: absolute;
+    left: 400px;
+    right: 400px;
+    margin: 8px;
+}
+
+.detail_box{
+    position: fixed;
+    top: 180px;
+    width: 820px;
+    height: 400px;
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(47, 0, 219, 0.548),#9c0b0b71);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;  
+    justify-content: center;
+    flex-direction: column; 
+}
