@@ -176,13 +176,6 @@ h1 {
     filter: blur(1px);
 }
 
-nav img {
-    padding: 0 auto;
-    width: 130px;
-    margin-left: 70px;
-    padding-bottom: 5px;
-}
-
 footer {
     width: 100%;
     bottom: 0;
@@ -409,6 +402,10 @@ hr {
     display: block;
     max-width: 80%;
     height: auto;
+}
+
+#img1{
+
 }
 
 .image:hover {
