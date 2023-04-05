@@ -1,0 +1,99 @@
+.commentsform{
+    height: 200vh;
+    width: 100%;
+    background-size:cover;
+    background-position: center;
+    font-size: 20px;
+}
+
+.bgpic {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  form{
+    padding-top: 10%;
+    padding-left: 35%;
+    padding-right: 20%;
+  }
+  
+  input[type=text],
+  input[type=email],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #495C7C;
+    border-radius: 4px;
+  }
+  
+  input[type=text]:focus,
+  input[type=email]:focus,
+  select:focus,
+  textarea:focus {
+    border: 2px solid dodgerblue;
+  }
+  
+  button[type=submit],button[type=reset] {
+    background-color: #697994d3;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  button[type=submit]:hover,button[type=reset]:hover {
+    background-color: #495C7C;
+  }
+
+.rate {
+  float: left;
+  height: 45px;
+  justify-content: center;
+}
+.rate:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+}
+.rate:not(:checked) > label {
+  float:right;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size: 38px;
+  color:#ccc;
+}
+.rate:not(:checked) > label:before {
+  content: '★ ';
+}
+.rate > input:checked ~ label {
+  color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
