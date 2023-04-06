@@ -1,0 +1,79 @@
+body {
+    background-color: none;
+    
+  }
+
+  
+
+  .box {
+    background-color: #CB9A9F;
+    color: #3A3A3F;
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #000;
+    box-sizing: border-box;
+  }
+
+  .Start_button {
+    border-radius: 30px;
+    background-color: #3A3A3F;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .Start_button:hover{
+    background-color: #871746;
+	transform: scale(1.1);
+  }
+
+  .Start_button.activestart{
+	opacity: 0;
+	pointer-events: none;
+  }
+
+  .sumbit_button{
+    border-radius: 30px;
+    background-color: #871746;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .sumbit_button:hover{
+    background-color: #3A3A3F;
+	transform: scale(1.1);
+  }
+
+  .quit{
+    border-radius: 30px;
+    background-color: #871746;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .topic{
+    text-align: center;
+  }
+

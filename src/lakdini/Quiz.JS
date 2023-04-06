@@ -1,5 +1,5 @@
 //elements
-const video = document.querySelector(".back-video");
+// const video = document.querySelector(".back-video");
 const exit_quiz = document.querySelector(".buttons .quit");
 const start = document.querySelector(".Start_button");
 function start_quiz(){
@@ -125,7 +125,7 @@ function Display_score(){
 function Display_Results(){
     let x = document.getElementById("QuizForm");
     x.style.display = "none";
-    video.classList.add("activevideo");
+    // video.classList.add("activevideo");
     start.classList.add("activestart");
     exit_quiz.classList.add("activebutton");
     number = "You got " + questions_correct +" Questions correct out of 10 Questions"
@@ -146,7 +146,8 @@ function Display_Results(){
   
 // answers  
     document.getElementById("Results").innerHTML="<span>"+number+"</span><br><span>" + score_output + "</span><br><span>" +timeCount+ "</span><br><br><span>" + one + "</span><br><span>" + two + "</span><br><span>" + three + "</span><br><span>" + four + "</span><br><span>" + five + "</span><br><span>" + six + "</span><br><span>" + seven + "</span><br><span>" + eight + "</span><br><span>" + nine + "</span><br><span>" + ten + "</span><br>";
-  
+  console.log("results",Result
+  );
 //Background color change
     if (User_Score>15){
         document.body.style.backgroundColor = "#008000";

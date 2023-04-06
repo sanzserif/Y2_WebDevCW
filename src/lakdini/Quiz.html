@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Melodyo | Quiz</title>
 
-    <link rel="icon" href="Quiz_Assets/icon.png" type="image/icon type" >
+    <link rel="icon" href="Quiz_Assets/icon.png" type="image/png" >
 	<link rel="stylesheet" href="Quiz.css">
 	<link rel="stylesheet" href="../common/Footer/FooterStyles.css">
 	<link rel="stylesheet" href="../common/NavBar/NavStyles.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
     <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
 </head>
@@ -20,20 +20,22 @@
 	<!-- All navigation bar contents -->
     <nav>
 		<img src="../assets/images/MelodyoLOGO.png" alt="Melodyo">
-		<ul>
-			<li><a href="../tashini/index.html" class="selectedone">Home</a></li>
-			<li><a href="../tashini/comments_form.html">Comments</a></li>
-			<li><a href="../venushi/shop/Shop.html">Shop</a></li>
-			<li><a href="../lakdini/Quiz.html">Quiz</a></li>
-			<li><a href="#sitemap">Site Map</a></li>
-			<li><a href="../lakdini/Details.html">About Us</a></li>
-		</ul>
-	</nav>
+
+            <!--menu items-->          
+			<ul>
+				<li><a href="../tashini/index.html" class="selectedone">Home</a></li>
+				<li><a href="../tashini/comments_form.html">Comments</a></li>
+				<li><a href="../venushi/shop/Shop.html">Shop</a></li>
+				<li><a href="../lakdini/Quiz.html">Quiz</a></li>
+				<li><a href="#sitemap">Site Map</a></li>
+				<li><a href="../lakdini/Details.html">About Us</a></li>
+			</ul>
+    </nav>
     <!-- End of all navigation bar contents -->
 	<video autoplay loop muted class="back-video">
 		<source src="Quiz_Assets/Quiz_Background.mp4" type="video/mp4">
 	</video>
-	<h1>Quiz By Ridez</h1>
+	<h1 class="topic">Quiz By Melodyo</h1>
 	<!--Start button--> 
 	<div>
 	<input type="button" value="Start" class="Start_button" onclick="start_quiz (); time_exceded(); timer(); ">
@@ -117,6 +119,7 @@
 	<div id="Results"></div>
 	<div class="buttons">
 		<button class="quit">Retry Quiz</button>
+		<script src="Quiz.js"></script>
 	</div>
 	    <!--website footer-->
 		<footer class="footer" id="footer">
@@ -167,4 +170,4 @@
 	<script src="Quiz.js"></script>
 </body>
 </body>
-</html>
+</html> 
