@@ -18,6 +18,7 @@
         <video class="bgvideo" autoplay muted loop plays-inline>
             <source src="08.mp4">
         </video>
+
         <nav>
             <img src="../assets/images/MelodyoLOGO.png" alt="Melodyo">
             <ul>
@@ -51,17 +52,22 @@
     <div class="image-container">
         <div class="row">
             <div class="image">
+
                 <img id="img1" src="../assets/images/Art Nouveau musical instruments.jpg" alt="Image 1">
                 <div class="topic">Art Nouveau musical instruments</div>
             </div>
             <div class="image">
                 <img id="img2" src="../assets/images/FolkMusic.jpg" alt="Image 2">
                 <div class="topic">Medieval Musical Instruments</div>
+
+
             </div>
+
         </div>
         <div class="row">
             <div class="image">
                 <img id="img3" src="../assets/images/Boroque.jpg" alt="Image 3">
+
                 <div class="topic">Musical instruments of Palladianism period</div>
             </div>
             <div class="image">
@@ -107,37 +113,31 @@
                 </center>
 
             </div>
+
         </div>
+        <script>
+            const image1 = document.getElementById('img1');
+            const image2 = document.getElementById('img2');
+            const image3 = document.getElementById('img3');
+            const image4 = document.getElementById('img4');
 
-        <div class="copyright">
-            <h5><i class="fa-sharp fa-solid fa-copyright"></i> 2023 Melodyo - All Rights Reserved</h5>
-        </div>
-        <button id="editorbtn"><a id="editor" href="pageEditor.html">Page Editor</a></button>
-    </footer>
+            image1.addEventListener('click', () => {
+                window.location.href = "contentPage1.html";
+            });
 
-    <script>
-        const image1 = document.getElementById('img1');
-        const image2 = document.getElementById('img2');
-        const image3 = document.getElementById('img3');
-        const image4 = document.getElementById('img4');
+            image2.addEventListener('click', () => {
+                window.location.href = "contentPage2.html";
+            });
 
-        image1.addEventListener('click', () => {
-            window.location.href = "contentPage1.html";
-        });
+            image3.addEventListener('click', () => {
+                window.location.href = "contentPage3.html";
+            });
 
-        image2.addEventListener('click', () => {
-            window.location.href = "contentPage2.html";
-        });
+            image4.addEventListener('click', () => {
+                window.location.href = "contentPage4.html";
+            });
 
-        image3.addEventListener('click', () => {
-            window.location.href = "contentPage3.html";
-        });
-
-        image4.addEventListener('click', () => {
-            window.location.href = "contentPage4.html";
-        });
-
-    </script>
+        </script>
 </body>
 
 </html>
