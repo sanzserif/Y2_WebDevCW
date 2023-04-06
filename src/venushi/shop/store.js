@@ -31,7 +31,7 @@ function showAlert() {
     alertBox.style.padding = "20px";
     alertBox.style.border = "3px solid black";
     alertBox.style.position = "fixed";
-    alertBox.style.top = "50px";
+    alertBox.style.top = "100px";
     alertBox.style.right = "36%";
     alertBox.style.borderRadius = "30px";
     alertBox.style.background = "linear-gradient(#E5AA70,#E97451)";
@@ -79,7 +79,7 @@ function addItemToCart(title,price,imageSrc){ //adding items to cart with the ti
             alertBox.style.padding = "20px";
             alertBox.style.border = "3px solid black";
             alertBox.style.position = "fixed";
-            alertBox.style.top = "50px";
+            alertBox.style.top = "100px";
             alertBox.style.width="30%"
             alertBox.style.textAlign ='center'
             alertBox.style.right = "35%";
