@@ -9,20 +9,6 @@
 	color: white;
 }
 
-/* video{
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-    filter: blur(4px);
-    overflow: hidden;
-} */
-
 .bg-image {
   background-image: url("../assets/images/backgroundImageQuiz.png");
   background-size: 100% 100%;
@@ -147,24 +133,24 @@ h1:hover {
     background-color: #495C7C;
     border-radius: 20px;
     bottom: 20px;
-    right: 10px;
     padding: 10px;
     font-size: 30px;
-}
-
-#editorbtn:hover {
+  }
+  
+  #editorbtn:hover {
     cursor: pointer;
     transition: 0.3s ease-in-out;
-}
-
-#editor {
+  }
+  
+  #editor {
+    padding-right: 2000px;
     text-decoration: none;
-}
-
-#editor:visited,
-:hover {
-  color:#fff;
-}
+  }
+  
+  #editor:visited,
+  :hover {
+   color: black;
+  }
 
 
 
