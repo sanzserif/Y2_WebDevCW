@@ -8,109 +8,166 @@
 
     <link rel="icon" href="Quiz_Assets/icon.png" type="image/png" >
 	<link rel="stylesheet" href="Quiz.css">
-	<link rel="stylesheet" href="header.css">
+	<link rel="stylesheet" href="../common/Footer/FooterStyles.css">
+	<link rel="stylesheet" href="../common/NavBar/NavStyles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
 </head>
-<body class="bg-image">
-	<div class="box">
-			<!-- <video id="backgroundVideo" autoplay muted loop>
-				<source src="../tashini/04.mp4" type="video/mp4"></source>
-			</video> -->
-			<h1 class="topic">Quiz By Melodyo</h1>
-			<br/>
-			<!--Start button--> 
-			<div>
-			<input type="button" value="Start" class="Start_button" onclick="start_quiz (); time_exceded(); timer(); ">
-			</div>
-			<div class="Quiz_box">
-				<form name="Quiz" id="QuizForm">
-					<br/>
-					<h3>1.How many strings does guitar usually have? </h3><br>
-						<p><input type="radio" name="q1" id="q1a" value=1><label for="q1a">A. 6</label></p>
-						<p><input type="radio" name="q1" id="q1b" value=2><label for="q1b">B. 7</label></p>
-						<p><input type="radio" name="q1" id="q1c" value=3><label for="q1c">C. 8</label></p> 
-						<p><input type="radio" name="q1" id="q1d" value=4><label for="q1d">D. 5</label></p>
-					<hr>
-					<br>
-					<h3>2.Which instrument did Sherlock Holmes play?</h3><br>
-						<p><input type="radio" name="q2" id="q2a" value=1><label for="q2a">A. The lute</label></p>
-						<p><input type="radio" name="q2" id="q2b" value=2><label for="q2b">B. The viola</label></p>
-						<p><input type="radio" name="q2" id="q2c" value=3><label for="q2c">C. The violin</label></p>
-						<p><input type="radio" name="q2" id="q2d" value=4><label for="q2d">D. The cello</label></p>
-					<hr>
-					<br>
-					<h3>3.Which musical instrument descended from a hunting horn?</h3><br>
-						<p><input type="radio" name="q3" id="q3a" value=1><label for="q3a">A. A french horn</label></p>
-						<p><input type="radio" name="q3" id="q3b" value=2><label for="q3b">B. A trombone</label></p>
-						<p><input type="radio" name="q3" id="q3c" value=3><label for="q3c">C. A saxophone</label></p>
-						<p><input type="radio" name="q3" id="q3d" value=4><label for="q3d">D. A didgeridoo</label></p>
-					<hr>
-					<br>		
-					<h3>4.The oldest form of composition of Hindustani Vocal Music is:</h3><br>
-						<p><input type="radio" name="q4" id="q4a" value=1><label for="q4a">A. Ghazal</label></p>
-						<p><input type="radio" name="q4" id="q4b" value=2><label for="q4b">B. Dhrupad</label></p>
-						<p><input type="radio" name="q4" id="q4c" value=3><label for="q4c">C. Thumri</label></p>
-						<p><input type="radio" name="q4" id="q4d" value=4><label for="q4d">D. Qawwali</label></p>
-					<hr>
-					<br>		
-					<h3>5.Who is not related to music?</h3><br>
-						<p><input type="radio" name="q5" id="q5a" value=1><label for = "q5a">A. Mozart</label></p>
-						<p><input type="radio" name="q5" id="q5b" value=2><label for = "q5b">B. Bach</label></p>
-						<p><input type="radio" name="q5" id="q5c" value=3><label for = "q5c">C. Picasso</label></p>
-						<p><input type="radio" name="q5" id="q5d" value=4><label for = "q5d">D. Bethoven</label></p>
-					<hr>
-					<br>		
-					<h3>6.Which stringed instrument has the most number of strings?</h3><br>
-						<p><input type="radio" name="q6" id="q6a" value=1><label for = "q6a">A. Guitar</label></p>
-						<p><input type="radio" name="q6" id="q6b" value=2><label for = "q6b">B. Ukulele</label></p>
-						<p><input type="radio" name="q6" id="q6c" value=3><label for = "q6c">C. Violin</label></p>
-						<p><input type="radio" name="q6" id="q6d" value=4><label for = "q6d">D. Sitar</label></p>
-					<hr>
-					<br>		
-					<h3>7.The lowest range of musical note is referred to as -</h3><br>
-						<p><input type="radio" name="q7" id="q7a" value=1><label for = "q7a">A. Treble</label></p>
-						<p><input type="radio" name="q7" id="q7b" value=2><label for = "q7b">B. Soprano</label></p>
-						<p><input type="radio" name="q7" id="q7c" value=3><label for = "q7c">C. Alto</label></p>
-						<p><input type="radio" name="q7" id="q7d" value=4><label for = "q7d">D. Bass</label></p>
-					<hr>
-					<br>		
-					<h3>8.In an Orchestra, which is the largest brass section instrument?</h3><br>
-						<p><input type="radio" name="q8" id="q8a" value=1><label for = "q8a">A. Trumpet</label></p>
-						<p><input type="radio" name="q8" id="q8b" value=2><label for = "q8b">B. Tenor</label></p>
-						<p><input type="radio" name="q8" id="q8c" value=3><label for = "q8c">C. French horns</label></p>
-						<p><input type="radio" name="q8" id="q8d" value=4><label for = "q8d">D. Tuba</label></p>
-					<hr>
-					<br>		
-					<h3>9.The number of strings on a Ukulele is?</h3><br>
-						<p><input type="radio" name="q9" id="q9a" value=1><label for = "q9a">A. 3</label></p>
-						<p><input type="radio" name="q9" id="q9b" value=2><label for = "q9b">B. 6</label></p>
-						<p><input type="radio" name="q9" id="q9c" value=3><label for = "q9c">C. 4</label></p>
-						<p><input type="radio" name="q9" id="q9d" value=4><label for = "q9d">D. 8</label></p>
-					<hr>
-					<br>		
-					<h3>10.Name the oldest member of The Jackson 5?</h3><br>
-						<p><input type="radio" name="q10" id="q10a" value=1><label for = "q10a">A. Jackie Jackson</label></p>
-						<p><input type="radio" name="q10" id="q10b" value=2><label for = "q10b">B. Michael Jackson</label></p>
-						<p><input type="radio" name="q10" id="q10c" value=3><label for = "q10c">C. Randy Jackson</label></p>
-						<p><input type="radio" name="q10" id="q10d" value=4><label for = "q10d">D. Jermaine Jackson</label></p>
-						
-						<br>
-						<div>Seconds: <span id="time"></span></div>
-						<br/>
-						<input type="button" value="Submit" class="sumbit_button" onclick="endQuiz(); stop();">	
-				</form>
-			</div>
-			<div id="Results"></div>
-			<br/>
-			<div class="buttons">
-				<button class="quit">Retry Quiz</button>
-			<script src="Quiz.js"></script>
-	</div>
-	<br/>
-	<!-- <form action="pageEditor.html" id="editor"><input id="editorbtn" type="submit" value="Page Editor"></form> -->
-	<button id="editorbtn" onclick="window.location.href='pageEditor.html'">Page Editor</button>
+<body>
+    <body>
+	<!-- All navigation bar contents -->
+    <nav>
+		<img src="../assets/images/MelodyoLOGO.png" alt="Melodyo">
 
+            <!--menu items-->          
+			<ul>
+				<li><a href="../tashini/index.html" class="selectedone">Home</a></li>
+				<li><a href="../tashini/comments_form.html">Comments</a></li>
+				<li><a href="../venushi/shop/Shop.html">Shop</a></li>
+				<li><a href="../lakdini/Quiz.html">Quiz</a></li>
+				<li><a href="#sitemap">Site Map</a></li>
+				<li><a href="../lakdini/Details.html">About Us</a></li>
+			</ul>
+    </nav>
+    <!-- End of all navigation bar contents -->
+	<video autoplay loop muted class="back-video">
+		<source src="Quiz_Assets/Quiz_Background.mp4" type="video/mp4">
+	</video>
+	<h1 class="topic">Quiz By Melodyo</h1>
+	<!--Start button--> 
+	<div>
+	<input type="button" value="Start" class="Start_button" onclick="start_quiz (); time_exceded(); timer(); ">
 	</div>
+	<div class="Quiz_box">
+		<form name="Quiz" id="QuizForm">
+			<h3>1.How many strings does guitar usually have? </h3><br>
+				<p><input type="radio" name="q1" id="q1a" value=1><label for="q1a">A. 6</label></p>
+				<p><input type="radio" name="q1" id="q1b" value=2><label for="q1b">B. 7</label></p>
+				<p><input type="radio" name="q1" id="q1c" value=3><label for="q1c">C. 8</label></p> 
+				<p><input type="radio" name="q1" id="q1d" value=4><label for="q1d">D. 5</label></p>
+			<hr>
+			<br>
+			<h3>2.Which instrument did Sherlock Holmes play?</h3><br>
+				<p><input type="radio" name="q2" id="q2a" value=1><label for="q2a">A. The lute</label></p>
+				<p><input type="radio" name="q2" id="q2b" value=2><label for="q2b">B. The viola</label></p>
+				<p><input type="radio" name="q2" id="q2c" value=3><label for="q2c">C. The violin</label></p>
+				<p><input type="radio" name="q2" id="q2d" value=4><label for="q2d">D. The cello</label></p>
+			<hr>
+			<br>
+			<h3>3.Which musical instrument descended from a hunting horn?</h3><br>
+				<p><input type="radio" name="q3" id="q3a" value=1><label for="q3a">A. A french horn</label></p>
+				<p><input type="radio" name="q3" id="q3b" value=2><label for="q3b">B. A trombone</label></p>
+				<p><input type="radio" name="q3" id="q3c" value=3><label for="q3c">C. A saxophone</label></p>
+				<p><input type="radio" name="q3" id="q3d" value=4><label for="q3d">D. A didgeridoo</label></p>
+			<hr>
+			<br>		
+			<h3>4.The oldest form of composition of Hindustani Vocal Music is:</h3><br>
+				<p><input type="radio" name="q4" id="q4a" value=1><label for="q4a">A. Ghazal</label></p>
+				<p><input type="radio" name="q4" id="q4b" value=2><label for="q4b">B. Dhrupad</label></p>
+				<p><input type="radio" name="q4" id="q4c" value=3><label for="q4c">C. Thumri</label></p>
+				<p><input type="radio" name="q4" id="q4d" value=4><label for="q4d">D. Qawwali</label></p>
+			<hr>
+			<br>		
+			<h3>5.Who is not related to music?</h3><br>
+				<p><input type="radio" name="q5" id="q5a" value=1><label for = "q5a">A. Mozart</label></p>
+				<p><input type="radio" name="q5" id="q5b" value=2><label for = "q5b">B. Bach</label></p>
+				<p><input type="radio" name="q5" id="q5c" value=3><label for = "q5c">C. Picasso</label></p>
+				<p><input type="radio" name="q5" id="q5d" value=4><label for = "q5d">D. Bethoven</label></p>
+			<hr>
+			<br>		
+			<h3>6.Which stringed instrument has the most number of strings?</h3><br>
+				<p><input type="radio" name="q6" id="q6a" value=1><label for = "q6a">A. Guitar</label></p>
+				<p><input type="radio" name="q6" id="q6b" value=2><label for = "q6b">B. Ukulele</label></p>
+				<p><input type="radio" name="q6" id="q6c" value=3><label for = "q6c">C. Violin</label></p>
+				<p><input type="radio" name="q6" id="q6d" value=4><label for = "q6d">D. Sitar</label></p>
+			<hr>
+			<br>		
+			<h3>7.The lowest range of musical note is referred to as -</h3><br>
+				<p><input type="radio" name="q7" id="q7a" value=1><label for = "q7a">A. Treble</label></p>
+				<p><input type="radio" name="q7" id="q7b" value=2><label for = "q7b">B. Soprano</label></p>
+				<p><input type="radio" name="q7" id="q7c" value=3><label for = "q7c">C. Alto</label></p>
+				<p><input type="radio" name="q7" id="q7d" value=4><label for = "q7d">D. Bass</label></p>
+			<hr>
+			<br>		
+			<h3>8.In an Orchestra, which is the largest brass section instrument?</h3><br>
+				<p><input type="radio" name="q8" id="q8a" value=1><label for = "q8a">A. Trumpet</label></p>
+				<p><input type="radio" name="q8" id="q8b" value=2><label for = "q8b">B. Tenor</label></p>
+				<p><input type="radio" name="q8" id="q8c" value=3><label for = "q8c">C. French horns</label></p>
+				<p><input type="radio" name="q8" id="q8d" value=4><label for = "q8d">D. Tuba</label></p>
+			<hr>
+			<br>		
+			<h3>9.The number of strings on a Ukulele is?</h3><br>
+				<p><input type="radio" name="q9" id="q9a" value=1><label for = "q9a">A. 3</label></p>
+				<p><input type="radio" name="q9" id="q9b" value=2><label for = "q9b">B. 6</label></p>
+				<p><input type="radio" name="q9" id="q9c" value=3><label for = "q9c">C. 4</label></p>
+				<p><input type="radio" name="q9" id="q9d" value=4><label for = "q9d">D. 8</label></p>
+			<hr>
+			<br>		
+			<h3>10.Name the oldest member of The Jackson 5?</h3><br>
+				<p><input type="radio" name="q10" id="q10a" value=1><label for = "q10a">A. Jackie Jackson</label></p>
+				<p><input type="radio" name="q10" id="q10b" value=2><label for = "q10b">B. Michael Jackson</label></p>
+				<p><input type="radio" name="q10" id="q10c" value=3><label for = "q10c">C. Randy Jackson</label></p>
+				<p><input type="radio" name="q10" id="q10d" value=4><label for = "q10d">D. Jermaine Jackson</label></p>
+				
+				<br>
+				<div>Seconds: <span id="time"></span></div>
+				<input type="button" value="Submit" class="sumbit_button" onclick="endQuiz(); stop();">	
+		</form>
+	</div>
+	<div id="Results"></div>
+	<div class="buttons">
+		<button class="quit">Retry Quiz</button>
+		<script src="Quiz.js"></script>
+	</div>
+	    <!--website footer-->
+		<footer class="footer" id="footer">
+
+			<div class="footer-container">
+	
+				<div class="footer-menu">
+					<ul>
+						<li><a href="../../tashini/index.html">Home</a></li>
+						<li><a href="../../lakdini/Details.html">Our Members</a></li>
+						<li><a href="../../venushi/shop/Shop.html">Shop</a></li>
+						<li><a href="">Site Map</a></li>
+					</ul>
+				</div>
+	
+				<div class="footer-menu">
+					<ul>
+						<li><a href="">Privacy Policy</a></li>
+						<li><a href="">Refund Policy</a></li>
+						<li><a href="">Terms of Service</a></li>
+						<li><a href="">Delivery</a></li>
+					</ul>
+				</div>
+	
+				<div class="footer-menu">
+	
+					<h3>Follow Us</h3>
+					<p>Share your thoughts about us with the community</p>
+	
+					<center>
+						<div class="social-icons">
+							<a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+							<a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+							<a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+							<a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+						</div>
+					</center>
+	
+	
+				</div>
+			</div>
+	
+			<div class="copyright">
+				<h5><i class="fa-sharp fa-solid fa-copyright"></i> 2023 Melodyo - All Rights Reserved</h5>
+			</div>
+	
+		</footer>
+	<script src="Quiz.js"></script>
+</body>
 </body>
 </html> 
