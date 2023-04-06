@@ -152,7 +152,6 @@ hr {
 .footer {
     padding: 40px;
     background: linear-gradient(to left, #899cbd, #56698c);
-    max-width: 100%;
 }
 
 .footer .footer-container {
@@ -170,17 +169,16 @@ hr {
 }
 
 .footer-menu p {
+    
     margin: 10px 0;
-    font-weight: 200;
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 .footer-menu h3 {
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-.copyright h5 {
-    color: white;
-    letter-spacing: 1px;
-}
+
 
 .footer-menu ul li {
     margin: 5px 0;
@@ -190,10 +188,11 @@ hr {
     color: rgb(23, 23, 23);
     font-weight: 400;
     letter-spacing: 1px;
-    list-style-type: none;
+    text-decoration: none;
 }
 .footer-menu ul li a:hover {
     text-decoration: none;
+    color: #fff;
 }
 
 .footer-menu .icons {
@@ -223,6 +222,7 @@ hr {
     color: #000;
     transition: 0.5s ease-out;
     padding: 10px;
+    justify-content: center;
 }
 
 .social-icons .fa-brands:hover {
