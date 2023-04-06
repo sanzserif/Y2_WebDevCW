@@ -9,9 +9,12 @@
         </title>
 
         <link rel="stylesheet" type="text/css" href="store.css"> <!-- linking the css styling document for store page --> 
-        <link rel="stylesheet" type="text/css" href="header.css"> <!-- linking the css styling document for header of the page --> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/c4254e24a8.js"></script><!-- linking the css styling document for header of the page --> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="store.js" async></script>
+        <script src="userDetailForm.js" async></script>
         <script> 
             // Passing Values To Invoice Page
             function passvalues()
@@ -27,27 +30,24 @@
     <body>
          <!-- back to top button -->
         <a type="button" href="#top" id="back-to-top-btn" title="Go to top">&#11014</a>
+        <!-- view cart button-->
         <a type="button" href="#cart" id="cart-btn" title="View cart">&#128722</a>
         
 
-<!-- All Title bar contents -->
-<nav id="top">
-    <a href="../home.html">
-    <img class= "logo" src="shop_assets/RidezLogoWhite.png" alt="RIDEZLogo">
-    </a>
-        <ul>
-            <li><a href="../home.html">HOME</a></li>
-            <li><a href="store.html" class="selected">SHOP</a></li>
-            <li><a href="../query_form/queryForm.html">QUERY FORM</a></li>
-            <li><a href="../QuizAndAboutUs/Quiz/Quiz.html">QUIZ</a></li>
-            <li><a href="../GalleryAndSiteMap/Gallery/gallery.html">GALLERY</a></li>
-            <li><a href="../GalleryAndSiteMap/SVG/sitemap.html">SITE MAP</a></li>
-            <li><a href="../QuizAndAboutUs/Aboutus/Aboutus.html">ABOUT US</a></li>
-        </ul>
-        
-    </nav>
-<!-- End of the title bar -->
+<!-- navbar -->
+<nav>
+    <img src="../assets/images/MelodyoLOGO.png" alt="Melodyo">
+    <ul>
+        <li><a href="../tashini/index.html" class="selectedone">Home</a></li>
+        <li><a href="../tashini/comments_form.html">Comments</a></li>
+        <li><a href="../venushi/shop/Shop.html">Shop</a></li>
+        <li><a href="../lakdini/Quiz.html">Quiz</a></li>
+        <li><a href="#sitemap">Site Map</a></li>
+        <li><a href="../lakdini/Details.html">About Us</a></li>
+    </ul>
+</nav>
 
+<!-- background video -->
     <video id="bgvideo"  autoplay muted loop>
         <source src="bgVideo.mp4" type="video/mp4" >
     </video>
@@ -61,50 +61,51 @@
                     <span class="shop-item-title">Cornet</span>
                     <img class="shop-item-image" src="Brass/cornet.png" alt="m1">
                     <div class="shop-item-details">
-                        <span class="shop-item-price">$899.99</span>
+                        <span class="shop-item-price">$265.25</span>
                     </div>
                     <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                       
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
                     <span class="shop-item-title">French horn</span>
                     <img class="shop-item-image" src="Brass/french horn.png" alt="m2">
                     <div class="shop-item-details">
-                        <span class="shop-item-price">$580.00</span>
+                        <span class="shop-item-price">$1600.00</span>
                     </div>
                     <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
                     <span class="shop-item-title">Trombone</span>
                     <img class="shop-item-image" src="Brass/trombone.png" alt="m3">
                     <div class="shop-item-details">
-                        <span class="shop-item-price">$489.99</span>
+                        <span class="shop-item-price">$649.99</span>
                     </div>
                     <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
                     <span class="shop-item-title">Trumphet</span>
                     <img class="shop-item-image" src="Brass/trumpet.png" alt="m4">
                     <div class="shop-item-details">
-                        <span class="shop-item-price">$520.00</span>
+                        <span class="shop-item-price">$160.00</span>
                     </div>
                     <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
                     <span class="shop-item-title">Tuba</span>
                     <img class="shop-item-image" src="Brass/tuba.png" alt="m4">
                     <div class="shop-item-details">
-                        <span class="shop-item-price">$520.00</span>
+                        <span class="shop-item-price">$3500.00</span>
                     </div>
                     <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
                     </div>
                 </div>
             </div>
@@ -118,30 +119,30 @@
                     <span class="shop-item-title">Organ</span>
                     <img class="shop-item-image" src="Keyboards/organ.png" alt="r1">
                     <div class="shop-item-details">
-                        <span class="shop-item-price">$1299.99</span>
+                        <span class="shop-item-price">$779.99</span>
                     </div>
                     <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
                     <span class="shop-item-title">Herpsicord</span>
                     <img class="shop-item-image" src="Keyboards/harpsicord.png" alt="r2">
                     <div class="shop-item-details">
-                        <span class="shop-item-price">$1155.00</span>
+                        <span class="shop-item-price">$980.00</span>
                     </div>
                     <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
                     <span class="shop-item-title">Piano</span>
                     <img class="shop-item-image" src="Keyboards/piano.png" alt="r3">
                     <div class="shop-item-details">
-                        <span class="shop-item-price">$980.00</span>
+                        <span class="shop-item-price">$1155.00</span>
                     </div>
                     <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
                     </div>
                 </div>
             </div>
@@ -158,7 +159,7 @@
                         <span class="shop-item-price">$2200.00</span>
                     </div>
                     <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
@@ -168,7 +169,7 @@
                         <span class="shop-item-price">$2200.00</span>
                     </div>
                     <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
@@ -178,7 +179,7 @@
                         <span class="shop-item-price">$2200.00</span>
                     </div>
                     <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
@@ -188,7 +189,7 @@
                         <span class="shop-item-price">$2200.00</span>
                     </div>
                     <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
@@ -198,7 +199,7 @@
                         <span class="shop-item-price">$2200.00</span>
                     </div>
                     <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
@@ -208,7 +209,7 @@
                         <span class="shop-item-price">$2200.00</span>
                     </div>
                     <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
@@ -218,7 +219,7 @@
                         <span class="shop-item-price">$2200.00</span>
                     </div>
                     <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
                     </div>
                 </div>
             </div>
@@ -236,17 +237,17 @@
                         <span class="shop-item-price">$55.00</span>
                     </div>
                     <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
                     <span class="shop-item-title">Double Bass</span>
                     <img class="shop-item-image" src="Strings/double bass.png" alt="a2">
                     <div class="shop-item-details">
-                        <span class="shop-item-price">$9.99</span>
+                        <span class="shop-item-price" onclick="showAlert()">$9.99</span>
                     </div>
                     <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
@@ -256,7 +257,7 @@
                         <span class="shop-item-price">$12.99</span>
                     </div>
                     <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
@@ -266,7 +267,7 @@
                         <span class="shop-item-price">$6.00</span>
                     </div>
                     <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
@@ -276,7 +277,7 @@
                         <span class="shop-item-price">$6.00</span>
                     </div>
                     <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
@@ -286,7 +287,7 @@
                         <span class="shop-item-price">$6.00</span>
                     </div>
                     <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
@@ -296,7 +297,7 @@
                         <span class="shop-item-price">$6.00</span>
                     </div>
                     <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
                     </div>
                 </div>
             </div>
@@ -313,7 +314,7 @@
                         <span class="shop-item-price">$1299.99</span>
                     </div>
                     <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
@@ -323,7 +324,7 @@
                         <span class="shop-item-price">$1155.00</span>
                     </div>
                     <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
@@ -333,7 +334,7 @@
                         <span class="shop-item-price">$980.00</span>
                     </div>
                     <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
@@ -343,7 +344,7 @@
                         <span class="shop-item-price">$980.00</span>
                     </div>
                     <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
@@ -353,7 +354,7 @@
                         <span class="shop-item-price">$980.00</span>
                     </div>
                     <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
@@ -363,14 +364,14 @@
                         <span class="shop-item-price">$980.00</span>
                     </div>
                     <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <button class="btn btn-primary shop-item-button" type="button" >ADD TO CART</button>
                     </div>
                 </div>
             </div>
         </section>
 
         <!--Cart-->
-        <section class="container content-section" id="cart">
+        <section class="cont content-section" id="cart">
             <h2 class="section-header">CART</h2>
             <div class="cart-row">
                 <span class="cart-item cart-header cart-column">ITEM</span>
@@ -384,128 +385,63 @@
                 <strong class="cart-total-title">Total</strong>
                 <span class="cart-total-price">$0</span>
             </div>
-            <button data-model-target="#model" class="btn btn-primary btn-purchase" type="submit">PURCHASE</button>
+            <button data-model-target="#model" class="btn btn-warning btn-purchase" type="submit">PURCHASE</button>
         </section>
 
-       
-<!--Beginning Of User Details Form-->
-<div class="model" id="model">
-    <div class="model-header">
-        <div class="title">User Details Form</div>
-        <button data-close-button class="close-button">&times;</button>
-    </div>
-    <div class="model-body">
-        <form  id="create-account-form" action="storeInvoice.html" method="GET">
-            <!-- USERNAME -->
-            <div class="input-group">
-                <label for="username">Name</label>
-                <input type="text" id="username" placeholder="Name" name="Name">
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
-                <p>Error Message</p>
-            </div>
-            <!-- EMAIL -->
-            <div class="input-group">
-                <label for="email">Email</label>
-                <input type="text" id="email" placeholder="Email" name="Email">
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
-                <p>Error Message</p>
-            </div>
-            <!-- USER ADDRESS -->
-            <div class="input-group">
-                <label for="address">Address</label>
-                <input type="text" id="address" placeholder="Address" name="Address">
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
-                <p>Error Message</p>
-            </div>
-            <!-- MOBILE NUMBER  -->
-            <div class="input-group">
-                <label for="mobileNumber">Mobile Number</label>
-                <input type="tel" id="mobileNumber" placeholder="Mobile Number" name="Phone">
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
-                <p>Error Message</p>
-            </div>
-        </form>
-        <form action="output-Javascript-Localstorage.html" method="POST">
-            <input id="btnPopup" type="submit" value="Checkout" onclick="passvalues(),invoiceData()"/>
-            <script>
-           function invoiceData(){
-                        var productsVar = document.getElementById('mydiv1').innerHTML;
-                        localStorage.setItem("ITEMS",productsVar);
-                        return;
-                    }
-            </script>
-        </form>
-        <script src="cartFormInputValidation.js"></script>
-    </div>
-</div>
 <div id="overlay"></div>
 <!--End Of User Detail Form-->
 
     <script src="userDetailForm.js" async></script>
-        <!--website footer -->
-    <div class="footer">
-        <div class="footer-content">
-          <div class="footer-img">
-            <!-- website logo in footer -->
-            <a href="../home.html">
-            <img
-              src="shop_assets/RidezLogoWhite.png"
-              alt="footer logo"
-              width="58%"
-              role="img" aria-label="link to home page"
-              /></a>
-          </div>
-          <div class="footer-navigation text-left" role="navigation" aria-label="Main">
-            <h2>Navigation</h2>
-            <!-- footer navigation -->
-            <ul class="no-bullet">
-                <li><a href="../home.html">HOME</a></li>
-                <li><a href="store.html">SHOP</a></li>
-                <li><a href="../query_form/queryForm.html">QUERY FORM</a></li>
-                <li><a href="../QuizAndAboutUs/Quiz/Quiz.html">QUIZ</a></li>
-                <li><a href="../GalleryAndSiteMap/Gallery/gallery.html">GALLERY</a></li>
-                <li><a href="../GalleryAndSiteMap/SVG/sitemap.html">SITE MAP</a></li>
-                <li><a href="../QuizAndAboutUs/Aboutus/Aboutus.html">ABOUT US</a></li>
-            </ul>
-          </div>
-          <div class="footer-about">
-            <!-- footer about area -->
-            <h2>About Us</h2>
-            <p class="justify-text">
-              We created this website for our course work in web module.
-              <br />
-              This site contains information about bicycles in the world,
-              with detailed descriptions and images which will help you to decide which
-              bicycles suitable for you to choose.
-              <br />
-              Also we have some unique, quality products made all around the world
-              for the lowest rates.
-            </p>
-          </div>
-          <div class="footer-contact">
-            <!-- footer contact info -->
-            <h2><strong>Contact Info</strong></h2>
-            <p>
-              +94 783054058 <br /><br />
-              RIDEZ <br />
-              No 197/8, <br />
-              Galle Road,<br />
-              Galle.
-            </p>
-          </div>
-        </div>
-        <hr class="footer-hr">
-        <div class="footer-content">
-          
-        </div>
-        <hr class="footer-hr">
-        <br>
+
+        <!--footer -->
+        <footer class="footer" id="footer">
+
+            <div class="footer-container">
+    
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="../../tashini/index.html">Home</a></li>
+                        <li><a href="../../lakdini/Details.html">Our Members</a></li>
+                        <li><a href="../../venushi/shop/Shop.html">Shop</a></li>
+                        <li><a href="">Site Map</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Refund Policy</a></li>
+                        <li><a href="">Terms of Service</a></li>
+                        <li><a href="">Delivery</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-menu">
+    
+                    <h3>Follow Us</h3>
+                    <p>Share your thoughts about us with the community</p>
+    
+                    <center>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </center>
+    
+    
+                </div>
+            </div>
+    
+            <div class="copyright">
+                <h5><i class="fa-sharp fa-solid fa-copyright"></i> 2023 Melodyo - All Rights Reserved</h5>
+            </div>
+    
+        </footer>
+    
         <!-- page credits-link to page editor page -->
-        <p class="page-credits">Created by <a href="PageEditor/Pageeditor.html">Kalana Pabasara</a></p>
-      </div>
+        
+    
     </body>
 </html>

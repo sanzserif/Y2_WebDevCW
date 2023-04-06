@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../../tashini/Images/Melodyo LOGO.png">
+        <title>
+            Checkout
+        </title>
+    <link rel="stylesheet" href="PaymentGateway.css">
+    <script src="Checkout.js" async></script>
+</head>
+<body>
+
+<div class="container">
+
+    <form id="userForm" onsubmit="return false" action="">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title"><b><u>Billing address</b></u></h3>
+
+                <div class="inputBox" id="name">
+                    <span><sup class="red-star">*</sup>Full name : </span>
+                    <input type="text" placeholder="Alex Fernando" required>
+                </div>
+                <div class="inputBox" id="email">
+                    <span><sup class="red-star">*</sup>Email : </span>
+                    <input type="email" placeholder="alexf002@gmail.com" required>
+                </div>
+                <div class="inputBox" id="address">
+                    <span><sup class="red-star">*</sup>Address :</span>
+                    <input type="text" placeholder="No. 12/3A, Main Street, Colombo 5 " required>
+                </div>
+                <div class="inputBox" id="province">
+                    <span><sup class="red-star">*</sup>Province :</span>
+                    <select class="select">
+                        <option value="Western">Western</option>
+                        <option value="Central">Central</option>
+                        <option value="Eastern">Eastern</option>
+                        <option value="Northern">Northern</option>
+                        <option value="uva">Uva</option>
+                        <option value="Southern">Southern</option>
+                        <option value="Sabaragamuwa">Sabaragamuwa</option>
+                        <option value="North-western">North-western</option>
+                        <option value="North-central">North-central</option>
+                    </select>
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox" id="city">
+                        <span><sup class="red-star">*</sup>City :</span>
+                        <input type="text" placeholder="Colombo" required>
+                    </div>
+                    <div class="inputBox" id="zipCode">
+                        <span><sup class="red-star">*</sup>Zip code :</span>
+                        <input type="number" placeholder="### ###" required>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="col">
+
+                <h3 class="title"><u><b> Payment</b></u></h3>
+
+                <div class="inputBox">
+                    <span>We accept :</span>
+                    <img src="../../assets/images/ShopCards.png" alt="">
+                </div>
+                <div class="inputBox" id="cardName">
+                    <span><sup class="red-star">*</sup>Name on card :</span>
+                    <input type="text" placeholder="A B C Perera" required>
+                </div>
+                <div class="inputBox" id="cardNo">
+                    <span><sup class="red-star">*</sup>Credit card number :</span>
+                    <input type="number" placeholder="####-####-####-####" required>
+                </div>
+                <div class="flex" id="expYear">
+                    <div class="inputBox">
+                        <span><sup class="red-star">*</sup>Exp year :</span>
+                        <select class="select">
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+                            <option value="2031">2031</option>
+                            <option value="2032">2032</option>
+                            <option value="2033">2033</option>
+                        </select>
+                    </div>
+                    <div class="inputBox" id="expMonth">
+                        <span><sup class="red-star">*</sup>Exp month :</span>
+                        <select class="select">
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                    
+                </div>
+                <div class="inputBox" id="cvv">
+                    <span><sup class="red-star">*</sup>CVV :</span>
+                    <input type="number" placeholder="###" required>
+                </div>
+                
+
+            </div>
+    
+        </div>
+
+        <input type="submit" value="Confirm Order" class="submit-btn" onclick="checkExpYear()">
+        <input type="submit" value="Go Back" class="back-btn" onclick="window.location.href = 'Shop.html'">
+
+    </form>
+
+</div>    
+</body>
+</html>

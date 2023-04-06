@@ -3,6 +3,7 @@ if(document.readyState=="loading"){     //checking to make sure that this docume
 }else{
     ready()
 }
+
 function ready(){ //this function is used to give the functionality to remove buttons in the cart
     var removeCartitemButton=document.getElementsByClassName('btn-danger')
     console.log(removeCartitemButton)
@@ -19,15 +20,27 @@ for(var i=0;i<quantityInputs.length;i++){
 var addToCartButtons = document.getElementsByClassName('shop-item-button')
 for(var i=0;i<addToCartButtons.length;i++){
     var button=addToCartButtons[i]
-    button.addEventListener('click',addToCartClicked) // passing the item which was added to the cart
-    
+    button.addEventListener('click',addToCartClicked) // passing the item which was added to the cart   
+}
 }
 
-
-}
-
-
-
+function showAlert() {
+    var alertBox = document.createElement("div");
+    alertBox.innerHTML = "Product added to the cart successfullty! &#128077" ;
+    alertBox.style.backgroundColor = '#CB9A9F';
+    alertBox.style.padding = "20px";
+    alertBox.style.border = "3px solid black";
+    alertBox.style.position = "fixed";
+    alertBox.style.top = "50px";
+    alertBox.style.right = "36%";
+    alertBox.style.borderRadius = "30px";
+    alertBox.style.background = "linear-gradient(#E5AA70,#E97451)";
+    document.body.appendChild(alertBox);
+  
+    setTimeout(function() {
+      document.body.removeChild(alertBox);
+    }, 1000);
+  }
 
 function removeCartItem(event){ //removing cart items
     var buttonClicked=event.target
@@ -60,7 +73,23 @@ function addItemToCart(title,price,imageSrc){ //adding items to cart with the ti
     var cartItemNames= cartItems.getElementsByClassName('cart-item-title')
     for(var i=0;i<cartItemNames.length;i++){
         if (cartItemNames[i].innerText==title){
-            alert('This item is already added to the cart')
+            var alertBox = document.createElement("div");
+            alertBox.innerHTML = "This item is already added to the cart!" ;
+            alertBox.style.backgroundColor = '#CB9A9F';
+            alertBox.style.padding = "20px";
+            alertBox.style.border = "3px solid black";
+            alertBox.style.position = "fixed";
+            alertBox.style.top = "50px";
+            alertBox.style.width="30%"
+            alertBox.style.textAlign ='center'
+            alertBox.style.right = "35%";
+            alertBox.style.borderRadius = "30px";
+            alertBox.style.background = "linear-gradient(#E5AA70,#E97451)";
+            document.body.appendChild(alertBox);
+
+            setTimeout(function() {
+                document.body.removeChild(alertBox);
+              }, 1500);
             return
         }
     }
