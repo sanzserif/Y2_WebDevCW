@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Medieval Musical Instruments - Melodyo</title>
+    <link rel="stylesheet" href="contentPageStyles.css">
+    <link rel="stylesheet" href="../common/NavBar/NavStyles.css">
+    <link rel="stylesheet" href="../common/Footer/FooterStyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
+</head>
+
+<body>
+    <nav>
+        <img src="../assets/images/MelodyoLOGO.png" alt="Melodyo">
+        <ul>
+            <li><a href="../tashini/index.html" class="selectedone">Home</a></li>
+            <li><a href="../tashini/comments_form.html">Comments</a></li>
+            <li><a href="../venushi/shop/Shop.html">Shop</a></li>
+            <li><a href="../lakdini/Quiz.html">Quiz</a></li>
+            <li><a href="#sitemap">Site Map</a></li>
+            <li><a href="../lakdini/Details.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="center">
+        <img src="../assets/images/FolkMusic.jpg" alt="Image" onclick="showContent()">
+        <div class="topic">Medieval Musical Instruments</div>
+    </div>
+
+    <div class="content" id="content">
+        <h1>Medieval Musical Instruments</h1>
+        <p>The Christian Church's expansion, feudalism, and the advancement of European art, music, and culture were all
+            features of the Medieval period, also known as the Middle Ages, which lasted from the 5th to the 15th
+            century. Musical instruments played a significant role in both holy and popular music during this time.
+            During the Middle Ages, the following musical instruments were common:<br><br>
+
+            Gregorian Chant: A genre of music employed in the Catholic Church, Gregorian Chant is a variation of
+            plainchant. It was sung by nuns and monks in cathedrals and monasteries all over Europe. The organ and the
+            harp were the two instruments most frequently employed in Gregorian chant.<br><br>
+            <span id="para1">
+                &#x2022; Organistrum: Two people played the organistrum, a type of stringed instrument from the Middle
+                Ages. It was akin to the hurdy-gurdy and featured a long neck with numerous strings. The organistrum was
+                a common accompaniment instrument for liturgical music during the 12th and 13th centuries.<br><br>
+            </span>
+            <span id="para2">
+                &#x2022; Psaltery: The strings of the psaltery were pluck-played stringed instruments. Throughout the
+                Medieval Ages, it was widely utilized in holy music and enjoyed popularity across all of Europe.<br><br>
+            </span>
+            <span id="para3">
+                &#x2022; Shawm: Similar to the oboe of today, the shawm was a form of medieval wind instrument. It was
+                played by blowing air into its double reed. Both secular and spiritual music both frequently used the
+                shawm.<br><br>
+            </span>
+            <span id="para4">
+                &#x2022; Lute: A stringed instrument akin to the modern guitar, the lute was formerly popular. It has a
+                long, fretted neck and a rounded body. In the 14th and 15th centuries, the lute was widely used in
+                secular music.<br><br>
+            </span>
+
+            Overall, the Middle Ages were a time of remarkable invention in musical instrument design as artists and
+            musicians worked to provide fresh and exciting sounds to go along with the music of the day. Many of the
+            popular musical instruments from this era are still in use today.
+        </p>
+    </div>
+
+    <footer class="footer" id="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="../../tashini/index.html">Home</a></li>
+                    <li><a href="../../lakdini/Details.html">Our Members</a></li>
+                    <li><a href="../../venushi/shop/Shop.html">Shop</a></li>
+                    <li><a href="">Site Map</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Refund Policy</a></li>
+                    <li><a href="">Terms of Service</a></li>
+                    <li><a href="">Delivery</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-menu">
+
+                <h3>Follow Us</h3>
+                <p>Share your thoughts about us with the community</p>
+
+                <center>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </center>
+
+
+            </div>
+        </div>
+
+        <div class="copyright">
+            <h5><i class="fa-sharp fa-solid fa-copyright"></i> 2023 Melodyo - All Rights Reserved</h5>
+        </div>
+        <form action="pageEditor.html" id="editor"><input id="editorbtn" type="submit" value="Page Editor"></form>
+    </footer>
+
+    <script>
+        function showContent() {
+            document.getElementById("content").classList.toggle("show");
+            // window.scrollBy(0, window.innerHeight);
+            scrollDownByIncrement(10, 20, window.innerHeight);
+
+            function scrollDownByIncrement(increment, interval, maxScroll) {
+                let currentScroll = window.scrollY;
+                if (currentScroll + increment < maxScroll) {
+                    window.scrollBy(0, increment);
+                    setTimeout(function () {
+                        scrollDownByIncrement(increment, interval, maxScroll);
+                    }, interval);
+                } else {
+                    window.scrollTo(0, maxScroll);
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

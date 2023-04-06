@@ -46,3 +46,36 @@ function sendEmail(event) {
   };
   xhr.send(formData);
 }
+
+
+const statusMessage = document.querySelector('.status-message');
+
+form.addEventListener('submit', async (event) => {
+  event.preventDefault();
+  const formData = new FormData(form);
+  const response = await fetch(form.action, {
+    method: 'POST',
+    body: formData,
+    headers: {
+      'Accept': 'application/json'
+    }
+  });
+  if (response.ok) {
+    form.reset();
+    statusMessage.innerHTML = 'Thanks for your feedback!';
+  } else {
+    statusMessage.innerHTML = 'There was a problem sending your feedback. Please try again later.';
+  }
+});
+
+Email.send({
+  Host : "smtp.gmail.com",
+  Username : "tashini.20212153@iit.ac.lk",
+  Password : "password",
+  To : 'them@website.com',
+  From : "you@isp.com",
+  Subject : "This is the subject",
+  Body : "And this is the body"
+}).then(
+message => alert(message)
+);

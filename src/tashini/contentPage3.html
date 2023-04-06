@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Musical instruments of Palladianism period - Melodyo</title>
+    <link rel="stylesheet" href="contentPageStyles.css">
+    <link rel="stylesheet" href="../common/NavBar/NavStyles.css">
+    <link rel="stylesheet" href="../common/Footer/FooterStyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
+</head>
+
+<body>
+    <nav>
+        <img src="../assets/images/MelodyoLOGO.png" alt="Melodyo">
+        <ul>
+            <li><a href="../tashini/index.html" class="selectedone">Home</a></li>
+            <li><a href="../tashini/comments_form.html">Comments</a></li>
+            <li><a href="../venushi/shop/Shop.html">Shop</a></li>
+            <li><a href="../lakdini/Quiz.html">Quiz</a></li>
+            <li><a href="#sitemap">Site Map</a></li>
+            <li><a href="../lakdini/Details.html">About Us</a></li>
+        </ul>
+    </nav>
+    <div class="center">
+        <img src="../assets/images/Boroque.jpg" alt="Image" onclick="showContent()">
+        <div class="topic">Musical instruments of Palladianism period</div>
+    </div>
+
+    <div class="content" id="content">
+        <h1>Musical instruments of Palladianism period</h1>
+        <p>Throughout the 18th century, Palladianism was a fashionable architectural style in England. It was
+            characterized by an emphasis on symmetry, proportion, and simplicity as well as a return to classical
+            ideals. The classical style had an impact on musical instruments throughout this time period as well. During
+            the Palladianism era, the following musical instruments were common:<br><br>
+            <span id="para1">
+                &#x2022; Fortepiano: A form of piano that gained popularity in the late 18th century was the fortepiano.
+                It had a softer, more delicate sound and was smaller than a modern piano. The fortepiano was a favorite
+                instrument of composers like Mozart and Beethoven and was frequently utilized in chamber music.<br><br>
+            </span>
+            <span id="para2">
+                &#x2022; Harpsichord: A common keyboard instrument during the Palladianism era was the harpsichord. By
+                using a quill or plectrum to pluck the strings, it had a distinctive tone. Baroque music frequently used
+                the harpsichord, which was a favorite instrument of artists like Bach and Handel.<br><br>
+            </span>
+            <span id="para3">
+                &#x2022; Violin: A common stringed instrument during the Palladianism era was the violin. It was a
+                favorite of composers like Vivaldi and Haydn and frequently employed in chamber music and orchestras. By
+                bowing the strings, the violin could produce a unique sound.<br><br>
+            </span>
+            <span id="para4">
+                &#x2022; Flute: A common woodwind instrument during the Palladianism era was the flute. It was a
+                favorite of composers like Mozart and Haydn and frequently employed in chamber music and orchestras. By
+                blowing air into the flute, one could produce a loud, distinct sound.<br><br>
+            </span>
+            <span id="para5">
+                &#x2022; Cello: A common stringed instrument during the Palladianism era was the cello. It was a
+                favorite of composers like Bach and Beethoven and frequently utilized in chamber music and orchestras.
+                The deep, rich sound of the cello was produced by bowing the strings.<br><br>
+            </span>
+                In general, the Palladianism era was a time of remarkable innovation and ingenuity in musical instrument
+                creation. Many of the popular musical instruments from this era are still in use today.
+        </p>
+    </div>
+
+    <footer class="footer" id="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="../../tashini/index.html">Home</a></li>
+                    <li><a href="../../lakdini/Details.html">Our Members</a></li>
+                    <li><a href="../../venushi/shop/Shop.html">Shop</a></li>
+                    <li><a href="">Site Map</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Refund Policy</a></li>
+                    <li><a href="">Terms of Service</a></li>
+                    <li><a href="">Delivery</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-menu">
+
+                <h3>Follow Us</h3>
+                <p>Share your thoughts about us with the community</p>
+
+                <center>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </center>
+
+
+            </div>
+        </div>
+
+        <div class="copyright">
+            <h5><i class="fa-sharp fa-solid fa-copyright"></i> 2023 Melodyo - All Rights Reserved</h5>
+        </div>
+
+    </footer>
+
+    <script>
+        function showContent() {
+            document.getElementById("content").classList.toggle("show");
+            // window.scrollBy(0, window.innerHeight);
+            scrollDownByIncrement(10, 20, window.innerHeight);
+
+            function scrollDownByIncrement(increment, interval, maxScroll) {
+                let currentScroll = window.scrollY;
+                if (currentScroll + increment < maxScroll) {
+                    window.scrollBy(0, increment);
+                    setTimeout(function () {
+                        scrollDownByIncrement(increment, interval, maxScroll);
+                    }, interval);
+                } else {
+                    window.scrollTo(0, maxScroll);
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -97,3 +97,27 @@ label {
 .rate > label:hover ~ input:checked ~ label {
   color: #c59b08;
 }
+
+#editorbtn {
+  color: #fff;
+  background-color: #495C7C;
+  border-radius: 20px;
+  bottom: 20px;
+  right: 10px;
+  padding: 10px;
+  font-size: 30px;
+}
+
+#editorbtn:hover {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+#editor {
+  text-decoration: none;
+}
+
+#editor:visited,
+:hover {
+  color: black;
+}

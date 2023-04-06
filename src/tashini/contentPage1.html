@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Art Nouveau musical instruments - Melodyo</title>
+	<link rel="stylesheet" href="contentPageStyles.css">
+	<link rel="stylesheet" href="../common/NavBar/NavStyles.css">
+	<link rel="stylesheet" href="../common/Footer/FooterStyles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+	<script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
+</head>
+
+<body>
+	<nav>
+		<img src="../assets/images/MelodyoLOGO.png" alt="Melodyo">
+		<ul>
+			<li><a href="../tashini/index.html" class="selectedone">Home</a></li>
+			<li><a href="../tashini/comments_form.html">Comments</a></li>
+			<li><a href="../venushi/shop/Shop.html">Shop</a></li>
+			<li><a href="../lakdini/Quiz.html">Quiz</a></li>
+			<li><a href="#sitemap">Site Map</a></li>
+			<li><a href="../lakdini/Details.html">About Us</a></li>
+		</ul>
+	</nav>
+
+	<div class="center">
+		<img src="../assets/images/ArtNouveauMusicalInstruments.jpg" alt="Image" onclick="showContent()">
+		<div class="topic">Art Nouveau musical instruments</div>
+	</div>
+
+	<div class="content" id="content">
+		<h1>Art Nouveau musical instruments</h1>
+		<p>The late 19th-century art and design style known as Art Nouveau, commonly referred to as "New Art" or
+			"Jugendstil," peaked in popularity around 1910. Several designers and painters were influenced by natural
+			forms and patterns during this time, and there was a renewed fascination in craftsmanship and traditional
+			methods.<br><br>
+
+			Although Art Nouveau is frequently linked to architecture, furniture, and decorative arts, musical
+			instruments were also influenced by it. During the Art Nouveau era, the following musical instruments were
+			common:<br><br>
+
+
+			<span id="para1">
+				&#x2022; The Art Nouveau harp: The Art Nouveau harp is distinguished by its elaborate, sweeping lines
+				and stylised floral motifs. It was frequently fashioned of wood and embellished with ivory or
+				mother-of-pearl inlays.<br><br>
+			</span>
+			<span id="para2">
+				&#x2022; Art Nouveau Guitar: The Art Nouveau guitar had a design with flowery designs and delicate,
+				curved lines. The body was frequently built of wood, and mother-of-pearl or abalone inlays were used to
+				embellish the fingerboard and headstock.<br><br>
+			</span>
+			<span id="para3">
+				&#x2022; The Art Nouveau piano: The Art Nouveau piano was distinguished by its slender lines and
+				ornamental components. The music stand had stylized floral motifs, and the legs and pedals frequently
+				resembled flower stems.<br><br>
+			</span>
+			<span id="para4">
+				&#x2022; Violin in the Art Nouveau style: This violin had curving lines and flowery decorations. The
+				chinrest and tailpiece were ornamented, while the body was frequently made of wood.<br><br>
+			</span>
+
+
+			Overall, the design of musical instruments experienced a tremendous deal of ingenuity and innovation during
+			the Art Nouveau era as artists and designers attempted to merge beauty and usefulness in novel and exciting
+			ways.
+		</p>
+	</div>
+
+	<footer class="footer" id="footer">
+
+		<div class="footer-container">
+
+			<div class="footer-menu">
+				<ul>
+					<li><a href="../../tashini/index.html">Home</a></li>
+					<li><a href="../../lakdini/Details.html">Our Members</a></li>
+					<li><a href="../../venushi/shop/Shop.html">Shop</a></li>
+					<li><a href="">Site Map</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-menu">
+				<ul>
+					<li><a href="">Privacy Policy</a></li>
+					<li><a href="">Refund Policy</a></li>
+					<li><a href="">Terms of Service</a></li>
+					<li><a href="">Delivery</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-menu">
+
+				<h3>Follow Us</h3>
+				<p>Share your thoughts about us with the community</p>
+
+				<center>
+					<div class="social-icons">
+						<a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+						<a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+						<a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+						<a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+					</div>
+				</center>
+
+
+			</div>
+		</div>
+
+		<div class="copyright">
+			<h5><i class="fa-sharp fa-solid fa-copyright"></i> 2023 Melodyo - All Rights Reserved</h5>
+		</div>
+
+	</footer>
+
+	<script>
+		function showContent() {
+			document.getElementById("content").classList.toggle("show");
+			// window.scrollBy(0, window.innerHeight);
+			scrollDownByIncrement(10, 20, window.innerHeight);
+
+			function scrollDownByIncrement(increment, interval, maxScroll) {
+				let currentScroll = window.scrollY;
+				if (currentScroll + increment < maxScroll) {
+					window.scrollBy(0, increment);
+					setTimeout(function () {
+						scrollDownByIncrement(increment, interval, maxScroll);
+					}, interval);
+				} else {
+					window.scrollTo(0, maxScroll);
+				}
+			}
+		}
+	</script>
+</body>
+
+</html>

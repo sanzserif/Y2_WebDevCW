@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Melodyo</title>
     <link rel="stylesheet" href="homePageStyles.css" type="text/css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredoka One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=FredokaOne">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
     <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
@@ -15,18 +15,19 @@
 
 <body>
     <div class="hero" id="top">
-        <video class="bgvideo" autoplay muted loop plays-inline>
+        <video class="bgvideo" autoplay muted loop playsinline>
             <source src="08.mp4">
         </video>
+
         <nav>
             <img src="../assets/images/MelodyoLOGO.png" alt="Melodyo">
             <ul>
-                <li><a href="#home" class="selectedone">Home</a></li>
-                <li><a href="#comments">Comments</a></li>
-                <li><a href="#shop">Shop</a></li>
-                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="../tashini/index.html" class="selectedone">Home</a></li>
+                <li><a href="../tashini/comments_form.html">Comments</a></li>
+                <li><a href="../venushi/shop/Shop.html">Shop</a></li>
+                <li><a href="../lakdini/Quiz.html">Quiz</a></li>
                 <li><a href="#sitemap">Site Map</a></li>
-                <li><a href="#about">About Us</a></li>
+                <li><a href="../lakdini/Details.html">About Us</a></li>
             </ul>
         </nav>
         <div class="content">
@@ -51,64 +52,97 @@
     <div class="image-container">
         <div class="row">
             <div class="image">
-                <img id="img1" src="../assets/images/MusicofAsia.jpg" alt="Image 1">
+
+                <img id="img1" src="../assets/images/ArtNouveauMusicalInstruments.jpg" alt="Image 1">
+                <div class="topic">Art Nouveau musical instruments</div>
             </div>
             <div class="image">
                 <img id="img2" src="../assets/images/FolkMusic.jpg" alt="Image 2">
+                <div class="topic">Medieval Musical Instruments</div>
+
+
             </div>
+
         </div>
         <div class="row">
             <div class="image">
                 <img id="img3" src="../assets/images/Boroque.jpg" alt="Image 3">
+
+                <div class="topic">Musical instruments of Palladianism period</div>
             </div>
             <div class="image">
                 <img id="img4" src="../assets/images/Punk.jpg" alt="Image 4">
+                <div class="topic">Musical instruments of Modernism period</div>
             </div>
         </div>
     </div>
-    <footer>
-        <div class="container">
-            <div class="rows">
-                <div class="cols">
-                    <img id="footerimg" src="Images/Melodyo2.png" alt="Melodyo">
-                    <p>Welcome to our musical website, where the world of music comes alive! Whether you're a die-hard
-                        fan,
-                        you've come to the
-                        right
-                        place.</p>
-                </div>
-                <div class="cols">
-                    <h2>Links</h2>
-                    <ul class="footerlinks">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Comments</a></li>
-                        <li><a href="">Shop</a></li>
-                        <li><a href="">Quiz</a></li>
-                        <li><a href="">Site Map</a></li>
-                        <li><a href="">About Us</a></li>
-                    </ul>
-                </div>
-                <div class="cols">
-                    <center>
-                        <h3>Follow Us</h3>
-                        <p>Share your thoughts about us with the community</p>
-                        <div class="social-icons">
-                            <i class="fa-brands fa-facebook-f"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-whatsapp"></i>
-                            <i class="fa-brands fa-twitter"></i>
-                        </div>
-                    </center>
-                </div>
+    <footer class="footer" id="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="../../tashini/index.html">Home</a></li>
+                    <li><a href="../../lakdini/Details.html">Our Members</a></li>
+                    <li><a href="../../venushi/shop/Shop.html">Shop</a></li>
+                    <li><a href="">Site Map</a></li>
+                </ul>
             </div>
-            <hr>
-            <center>
-                <p class="copyright"><i class="fa-sharp fa-solid fa-copyright"></i> 2023 Melodyo - All Rights Reserved
-                </p>
-            </center>
+
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Refund Policy</a></li>
+                    <li><a href="">Terms of Service</a></li>
+                    <li><a href="">Delivery</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-menu">
+
+                <h3>Follow Us</h3>
+                <p>Share your thoughts about us with the community</p>
+
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+
+            </div>
         </div>
-        <button id="editorbtn"><a id="editor" href="pageEditor.html">Page Editor</a> </button>
+
+        <div class="copyright">
+            <h5><i class="fa-sharp fa-solid fa-copyright"></i> 2023 Melodyo - All Rights Reserved</h5>
+        </div>
+        
+            <form action="pageEditor.html" id="editor"><input id="editorbtn" type="submit" value="Page Editor"></form>
+        
     </footer>
+        <script>
+            const image1 = document.getElementById('img1');
+            const image2 = document.getElementById('img2');
+            const image3 = document.getElementById('img3');
+            const image4 = document.getElementById('img4');
+
+            image1.addEventListener('click', () => {
+                window.location.href = "contentPage1.html";
+            });
+
+            image2.addEventListener('click', () => {
+                window.location.href = "contentPage2.html";
+            });
+
+            image3.addEventListener('click', () => {
+                window.location.href = "contentPage3.html";
+            });
+
+            image4.addEventListener('click', () => {
+                window.location.href = "contentPage4.html";
+            });
+
+        </script>
 </body>
 
 </html>
