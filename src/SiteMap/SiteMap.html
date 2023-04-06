@@ -19,10 +19,6 @@
     <link rel="stylesheet" href="../common/Footer/FooterStyles.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Fredoka One"
-    />
-    <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link
@@ -30,60 +26,28 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
     />
     <link rel="stylesheet" href="../common/NavBar/NavStyles.css" />
-    <script>
-      function openNav() {
-        document.getElementById("myNav").style.width = "100%";
+    <link rel="stylesheet" href="../SiteMap/PageEditor.css" />
+    <style>
+      body {
+        background-image: url("../assets/images/stack-vinyl-record-black-background.jpg");
       }
-
-      function closeNav() {
-        document.getElementById("myNav").style.width = "0%";
-      }
-    </script>
+    </style>
   </head>
 
   <body>
     <!-- navbar start -->
-    <body>
-      <nav>
-        <img src="../assets/images/MelodyoLOGO.png" alt="Melodyo" />
-        <ul>
-          <li><a href="#home" class="selectedone">Home</a></li>
-          <li><a href="#comments">Comments</a></li>
-          <li><a href="#shop">Shop</a></li>
-          <li><a href="#quiz">Quiz</a></li>
-          <li><a href="#sitemap">Site Map</a></li>
-          <li><a href="#about">About Us</a></li>
-        </ul>
-      </nav>
-    </body>
-
-    <!---------------------Page Editor-------------------------------------------------->
-    <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-        >&times;</a
-      >
-      <div class="overlay-content">
-        <div class="student">
-          STUDENT 4<br />Editor: Sidath Perera<br />
-          Student ID: 20200847<br />Task Completed:<br />Sitemap<br /><br />
-        </div>
-      </div>
-    </div>
-    <div id="right-bottom">
-      <span
-        style="
-          font-size: 20px;
-          cursor: pointer;
-          position: fixed;
-          bottom: 13px;
-          right: 14px;
-          color: white;
-        "
-        onclick="openNav()"
-        >&#9776; Page Editor
-      </span>
-    </div>
-
+    <nav>
+      <img src="../assets/images/MelodyoLOGO.png" alt="Melodyo" />
+      <ul>
+        <li><a href="../tashini/index.html" class="selectedone">Home</a></li>
+        <li><a href="../tashini/comments_form.html">Comments</a></li>
+        <li><a href="../Gallery/menu.html">Gallery</a></li>
+        <li><a href="../venushi/shop/Shop.html">Shop</a></li>
+        <li><a href="../lakdini/Quiz.html">Quiz</a></li>
+        <li><a href="../SiteMap/SiteMap.html">Site Map</a></li>
+        <li><a href="../lakdini/Details.html">About Us</a></li>
+      </ul>
+    </nav>
     <div class="sitemap">
       <svg id="svgJS" height="1000" width="1000">
         <g id="groupId1">
@@ -101,7 +65,6 @@
               y="160"
               fill="#000"
               font-size="18"
-              fill="#3A3A3F"
               text-anchor="middle"
             >
               Home - Tashini
@@ -111,7 +74,7 @@
 
         <g id="groupId2">
           <line
-            id="shapeId2"
+            id="shapeId1"
             stroke="white"
             stroke-width="2"
             x1="750"
@@ -138,7 +101,7 @@
               y="260"
               text-anchor="middle"
             >
-              Comments - Nipun
+              Comments - Tashini
             </text>
           </a>
         </g>
@@ -179,7 +142,7 @@
 
         <g id="groupId6">
           <line
-            id="shapeId2"
+            id="shapeId3"
             stroke="white"
             stroke-width="2"
             x1="750"
@@ -213,7 +176,7 @@
 
         <g id="groupId8">
           <line
-            id="shapeId2"
+            id="shapeId4"
             stroke="white"
             stroke-width="2"
             x1="750"
@@ -247,7 +210,7 @@
 
         <g id="groupId10">
           <line
-            id="shapeId2"
+            id="shapeId5"
             stroke="white"
             stroke-width="2"
             x1="750"
@@ -278,10 +241,9 @@
             </text>
           </a>
         </g>
-
         <g id="groupId12">
           <line
-            id="shapeId2"
+            id="shapeId7"
             stroke="white"
             stroke-width="2"
             x1="750"
@@ -290,9 +252,8 @@
             y2="730"
           ></line>
         </g>
-
-        <g id="groupId12">
-          <a xlink:href="#">
+        <g id="groupId13">
+          <a href="../Gallery/menu.html">
             <rect
               x="650"
               y="730"
@@ -308,7 +269,7 @@
               y="760"
               text-anchor="middle"
             >
-              About
+              Gallery - Nipun
             </text>
           </a>
         </g>
@@ -325,6 +286,7 @@
             <li><a href="../../lakdini/Details.html">Our Members</a></li>
             <li><a href="../../venushi/shop/Shop.html">Shop</a></li>
             <li><a href="../SiteMap/SiteMap.html">Site Map</a></li>
+            <li><a href="../../Gallery/menu.html">Gallery</a></li>
           </ul>
         </div>
 
@@ -357,7 +319,9 @@
           </div>
         </div>
       </div>
-
+      <form action="pageEditor.html" id="editor">
+        <input id="editorbtn" type="submit" value="Page Editor" />
+      </form>
       <div class="copyright">
         <h5>
           <i class="fa-sharp fa-solid fa-copyright"></i> 2023 Melodyo - All
@@ -365,8 +329,5 @@
         </h5>
       </div>
     </footer>
-
-    <!-- /* do not change this */ -->
-    <script src="./site-map.js"></script>
   </body>
 </html>

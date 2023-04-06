@@ -1,442 +1,636 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="../../assets/images/MelodyoLOGO.png">
-        <title>
-            Shop | Melodyo
-        </title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../../assets/images/MelodyoLOGO.png" />
+    <title>Shop | Melodyo</title>
 
-        <link rel="stylesheet" type="text/css" href="store.css"> <!-- linking the css styling document for store page --> 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="../../common/NavBar/NavStyles.css">
-        <link rel="stylesheet" href="../../common/Footer/FooterStyles.css">
-        
-    <script src="https://kit.fontawesome.com/c4254e24a8.js"></script><!-- linking the css styling document for header of the page --> 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="store.js" async></script>
-        <script src="userDetailForm.js" async></script>
-        <script> 
-            // Passing Values To Invoice Page
-            function passvalues()
-            {
-                var finalTotal=document.getElementsByClassName("cart-total-price")[0].innerText;
-                console.log(finalTotal);
-                localStorage.setItem("textval",finalTotal);
-                return false; 
-            }
-       
-        </script>
-    </head>
-    <body>
-         <!-- back to top button -->
+    <link rel="stylesheet" type="text/css" href="store.css" />
+    <!-- linking the css styling document for store page -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../../common/NavBar/NavStyles.css" />
+    <link rel="stylesheet" href="../../common/Footer/FooterStyles.css" />
 
-         <form  action="#top" ><input type="submit" id="back-to-top-btn" value="&#11014;" ></form>
-         <form  action="#cart" ><input type="submit" id="cart-btn" value="&#128722;" ></form>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
+    <!-- linking the css styling document for header of the page -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="store.js" async></script>
+    <script src="userDetailForm.js" async></script>
+    <script>
+      // Passing Values To Invoice Page
+      function passvalues() {
+        var finalTotal =
+          document.getElementsByClassName("cart-total-price")[0].innerText;
+        console.log(finalTotal);
+        localStorage.setItem("textval", finalTotal);
+        return false;
+      }
+    </script>
+  </head>
+  <body>
+    <!-- back to top button -->
 
-<!-- navbar -->
-<nav>
-    <img src="../../assets/images/MelodyoLOGO.png" alt="Melodyo">
-    <ul>
+    <form action="#top">
+      <input type="submit" id="back-to-top-btn" value="&#11014;" />
+    </form>
+    <form action="#cart">
+      <input type="submit" id="cart-btn" value="&#128722;" />
+    </form>
+
+    <!-- navbar -->
+    <nav>
+      <img src="../../assets/images/MelodyoLOGO.png" alt="Melodyo" />
+      <ul>
         <li><a href="../../tashini/index.html" class="selectedone">Home</a></li>
         <li><a href="../../tashini/comments_form.html">Comments</a></li>
+        <li><a href="../../Gallery/menu.html">Gallery</a></li>
         <li><a href="../../venushi/shop/Shop.html">Shop</a></li>
         <li><a href="../../lakdini/Quiz.html">Quiz</a></li>
-        <li><a href="#sitemap">Site Map</a></li>
+        <li><a href="../../SiteMap/SiteMap.html">Site Map</a></li>
         <li><a href="../lakdini/Details.html">About Us</a></li>
-    </ul>
-</nav>
+      </ul>
+    </nav>
 
-<!-- background video -->
-    <video id="bgvideo"  autoplay muted loop>
-        <source src="bgVideo.mp4" type="video/mp4" >
+    <!-- background video -->
+    <video id="bgvideo" autoplay muted loop>
+      <source src="bgVideo.mp4" type="video/mp4" />
     </video>
-    
+
     <!-- Brass Instrument section -->
     <section class="container content-section">
-            <h2 class="section-header" id="brass">Brass Instruments</h2>
-            <div class="shop-items">
-                
-                <div class="shop-item">
-                    <span class="shop-item-title">Cornet</span>
-                    <img class="shop-item-image" src="Brass/cornet.png" alt="m1">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$265.25</span>
-                    </div>
-                    <div class="shop-item-details">
-                       
-                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title">French horn</span>
-                    <img class="shop-item-image" src="Brass/frenchHorn.png" alt="m2">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$1600.00</span>
-                    </div>
-                    <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title">Trombone</span>
-                    <img class="shop-item-image" src="Brass/trombone.png" alt="m3">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$649.99</span>
-                    </div>
-                    <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title">Trumphet</span>
-                    <img class="shop-item-image" src="Brass/trumpet.png" alt="m4">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$160.00</span>
-                    </div>
-                    <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title">Tuba</span>
-                    <img class="shop-item-image" src="Brass/tuba.png" alt="m4">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$3500.00</span>
-                    </div>
-                    <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <h2 class="section-header" id="brass">Brass Instruments</h2>
+      <div class="shop-items">
+        <div class="shop-item">
+          <span class="shop-item-title">Cornet</span>
+          <img class="shop-item-image" src="Brass/cornet.png" alt="m1" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$265.25</span>
+          </div>
+          <div class="shop-item-details">
+            <button
+              class="btn btn-primary shop-item-button"
+              type="button"
+              onclick="showAlert()"
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">French horn</span>
+          <img class="shop-item-image" src="Brass/frenchHorn.png" alt="m2" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$1600.00</span>
+          </div>
+          <div class="shop-item-details">
+            <button
+              class="btn btn-primary shop-item-button"
+              type="button"
+              onclick="showAlert()"
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Trombone</span>
+          <img class="shop-item-image" src="Brass/trombone.png" alt="m3" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$649.99</span>
+          </div>
+          <div class="shop-item-details">
+            <button
+              class="btn btn-primary shop-item-button"
+              type="button"
+              onclick="showAlert()"
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Trumphet</span>
+          <img class="shop-item-image" src="Brass/trumpet.png" alt="m4" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$160.00</span>
+          </div>
+          <div class="shop-item-details">
+            <button
+              class="btn btn-primary shop-item-button"
+              type="button"
+              onclick="showAlert()"
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Tuba</span>
+          <img class="shop-item-image" src="Brass/tuba.png" alt="m4" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$3500.00</span>
+          </div>
+          <div class="shop-item-details">
+            <button
+              class="btn btn-primary shop-item-button"
+              type="button"
+              onclick="showAlert()"
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- Keyboard section -->
-        <section class="container content-section">
-            <h2 class="section-header"  id="keyboards">Keyboards</h2>
-            <div class="shop-items">
-                <div class="shop-item">
-                    <span class="shop-item-title">Organ</span>
-                    <img class="shop-item-image" src="Keyboards/organ.png" alt="r1">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$779.99</span>
-                    </div>
-                    <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title">Herpsicord</span>
-                    <img class="shop-item-image" src="Keyboards/harpsicord.png" alt="r2">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$980.00</span>
-                    </div>
-                    <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title">Piano</span>
-                    <img class="shop-item-image" src="Keyboards/piano.png" alt="r3">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$1155.00</span>
-                    </div>
-                    <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- Keyboard section -->
+    <section class="container content-section">
+      <h2 class="section-header" id="keyboards">Keyboards</h2>
+      <div class="shop-items">
+        <div class="shop-item">
+          <span class="shop-item-title">Organ</span>
+          <img class="shop-item-image" src="Keyboards/organ.png" alt="r1" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$779.99</span>
+          </div>
+          <div class="shop-item-details">
+            <button
+              class="btn btn-primary shop-item-button"
+              type="button"
+              onclick="showAlert()"
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Herpsicord</span>
+          <img
+            class="shop-item-image"
+            src="Keyboards/harpsicord.png"
+            alt="r2"
+          />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$980.00</span>
+          </div>
+          <div class="shop-item-details">
+            <button
+              class="btn btn-primary shop-item-button"
+              type="button"
+              onclick="showAlert()"
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Piano</span>
+          <img class="shop-item-image" src="Keyboards/piano.png" alt="r3" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$1155.00</span>
+          </div>
+          <div class="shop-item-details">
+            <button
+              class="btn btn-primary shop-item-button"
+              type="button"
+              onclick="showAlert()"
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- Percussion Instruments section -->
-        <section class="container content-section">
-            <h2 class="section-header" id="purcussion">Percussion Insrtruments</h2>
-            <div class="shop-items">
-                <div class="shop-item">
-                    <span class="shop-item-title">Base Drum</span>
-                    <img class="shop-item-image" src="Percussion/baseDrum.png" alt="e1" >
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$2200.00</span>
-                    </div>
-                    <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title">Cymbals</span>
-                    <img class="shop-item-image" src="Percussion/cymbals.png" alt="e1" >
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$2200.00</span>
-                    </div>
-                    <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title">Timpani</span>
-                    <img class="shop-item-image" src="Percussion/timpani.png" alt="e1" >
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$2200.00</span>
-                    </div>
-                    <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title">Xylophone</span>
-                    <img class="shop-item-image" src="Percussion/xylophone.png" alt="e1" >
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$2200.00</span>
-                    </div>
-                    <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title">Tabla</span>
-                    <img class="shop-item-image" src="Percussion/tabla.png" alt="e1" >
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$2200.00</span>
-                    </div>
-                    <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title">Gatabera</span>
-                    <img class="shop-item-image" src="Percussion/gatabera.png" alt="e1" >
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$2200.00</span>
-                    </div>
-                    <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title">Dawla</span>
-                    <img class="shop-item-image" src="Percussion/dawla.png" alt="e1" >
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$2200.00</span>
-                    </div>
-                    <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- Percussion Instruments section -->
+    <section class="container content-section">
+      <h2 class="section-header" id="purcussion">Percussion Insrtruments</h2>
+      <div class="shop-items">
+        <div class="shop-item">
+          <span class="shop-item-title">Base Drum</span>
+          <img class="shop-item-image" src="Percussion/baseDrum.png" alt="e1" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$2200.00</span>
+          </div>
+          <div class="shop-item-details">
+            <button
+              class="btn btn-primary shop-item-button"
+              type="button"
+              onclick="showAlert()"
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Cymbals</span>
+          <img class="shop-item-image" src="Percussion/cymbals.png" alt="e1" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$2200.00</span>
+          </div>
+          <div class="shop-item-details">
+            <button
+              class="btn btn-primary shop-item-button"
+              type="button"
+              onclick="showAlert()"
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Timpani</span>
+          <img class="shop-item-image" src="Percussion/timpani.png" alt="e1" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$2200.00</span>
+          </div>
+          <div class="shop-item-details">
+            <button
+              class="btn btn-primary shop-item-button"
+              type="button"
+              onclick="showAlert()"
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Xylophone</span>
+          <img
+            class="shop-item-image"
+            src="Percussion/xylophone.png"
+            alt="e1"
+          />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$2200.00</span>
+          </div>
+          <div class="shop-item-details">
+            <button
+              class="btn btn-primary shop-item-button"
+              type="button"
+              onclick="showAlert()"
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Tabla</span>
+          <img class="shop-item-image" src="Percussion/tabla.png" alt="e1" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$2200.00</span>
+          </div>
+          <div class="shop-item-details">
+            <button
+              class="btn btn-primary shop-item-button"
+              type="button"
+              onclick="showAlert()"
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Gatabera</span>
+          <img class="shop-item-image" src="Percussion/gatabera.png" alt="e1" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$2200.00</span>
+          </div>
+          <div class="shop-item-details">
+            <button
+              class="btn btn-primary shop-item-button"
+              type="button"
+              onclick="showAlert()"
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Dawla</span>
+          <img class="shop-item-image" src="Percussion/dawla.png" alt="e1" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$2200.00</span>
+          </div>
+          <div class="shop-item-details">
+            <button
+              class="btn btn-primary shop-item-button"
+              type="button"
+              onclick="showAlert()"
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- String Instruments section -->
-        <section class="container content-section">
-            <h2 class="section-header" id="string">String Instruments</h2>
-            <div class="shop-items">
-                
-                <div class="shop-item">
-                    <span class="shop-item-title">Cello</span>
-                    <img class="shop-item-image" src="Strings/cello.png" alt="a1">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$55.00</span>
-                    </div>
-                    <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title">Double Bass</span>
-                    <img class="shop-item-image" src="Strings/doubleBass.png" alt="a2">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" onclick="showAlert()">$9.99</span>
-                    </div>
-                    <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title">Electric Guitar</span>
-                    <img class="shop-item-image" src="Strings/electricGuitar.png" alt="a2">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$12.99</span>
-                    </div>
-                    <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title">Guitar</span>
-                    <img class="shop-item-image" src="Strings/guitar.png" alt="a3">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$6.00</span>
-                    </div>
-                    <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title">Harp</span>
-                    <img class="shop-item-image" src="Strings/harp.png" alt="a3">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$6.00</span>
-                    </div>
-                    <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title">Violin</span>
-                    <img class="shop-item-image" src="Strings/violin.png" alt="a3">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$6.00</span>
-                    </div>
-                    <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title">Shamisen</span>
-                    <img class="shop-item-image" src="Strings/shamisen.png" alt="a3">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$6.00</span>
-                    </div>
-                    <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- String Instruments section -->
+    <section class="container content-section">
+      <h2 class="section-header" id="string">String Instruments</h2>
+      <div class="shop-items">
+        <div class="shop-item">
+          <span class="shop-item-title">Cello</span>
+          <img class="shop-item-image" src="Strings/cello.png" alt="a1" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$55.00</span>
+          </div>
+          <div class="shop-item-details">
+            <button
+              class="btn btn-primary shop-item-button"
+              type="button"
+              onclick="showAlert()"
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Double Bass</span>
+          <img class="shop-item-image" src="Strings/doubleBass.png" alt="a2" />
+          <div class="shop-item-details">
+            <span class="shop-item-price" onclick="showAlert()">$9.99</span>
+          </div>
+          <div class="shop-item-details">
+            <button
+              class="btn btn-primary shop-item-button"
+              type="button"
+              onclick="showAlert()"
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Electric Guitar</span>
+          <img
+            class="shop-item-image"
+            src="Strings/electricGuitar.png"
+            alt="a2"
+          />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$12.99</span>
+          </div>
+          <div class="shop-item-details">
+            <button
+              class="btn btn-primary shop-item-button"
+              type="button"
+              onclick="showAlert()"
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Guitar</span>
+          <img class="shop-item-image" src="Strings/guitar.png" alt="a3" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$6.00</span>
+          </div>
+          <div class="shop-item-details">
+            <button
+              class="btn btn-primary shop-item-button"
+              type="button"
+              onclick="showAlert()"
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Harp</span>
+          <img class="shop-item-image" src="Strings/harp.png" alt="a3" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$6.00</span>
+          </div>
+          <div class="shop-item-details">
+            <button
+              class="btn btn-primary shop-item-button"
+              type="button"
+              onclick="showAlert()"
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Violin</span>
+          <img class="shop-item-image" src="Strings/violin.png" alt="a3" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$6.00</span>
+          </div>
+          <div class="shop-item-details">
+            <button
+              class="btn btn-primary shop-item-button"
+              type="button"
+              onclick="showAlert()"
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Shamisen</span>
+          <img class="shop-item-image" src="Strings/shamisen.png" alt="a3" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$6.00</span>
+          </div>
+          <div class="shop-item-details">
+            <button
+              class="btn btn-primary shop-item-button"
+              type="button"
+              onclick="showAlert()"
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- Woodwind Instruments section -->
-        <section class="container content-section">
-            <h2 class="section-header"  id="woodwind">Woodwind Instruments</h2>
-            <div class="shop-items">
-                <div class="shop-item">
-                    <span class="shop-item-title">Basoon</span>
-                    <img class="shop-item-image" src="Woodwind/basoon.png" alt="r1">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$1299.99</span>
-                    </div>
-                    <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title">Clarinet</span>
-                    <img class="shop-item-image" src="Woodwind/clarinet.png" alt="r2">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$1155.00</span>
-                    </div>
-                    <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title">Flute</span>
-                    <img class="shop-item-image" src="Woodwind/flute.png" alt="r3">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$980.00</span>
-                    </div>
-                    <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title">Oboe</span>
-                    <img class="shop-item-image" src="Woodwind/oboe.png" alt="r3">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$980.00</span>
-                    </div>
-                    <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title">Saxophone</span>
-                    <img class="shop-item-image" src="Woodwind/saxophone.png" alt="r3">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$980.00</span>
-                    </div>
-                    <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button" onclick="showAlert()">ADD TO CART</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title">Recorder</span>
-                    <img class="shop-item-image" src="Woodwind/recorder.png" alt="r3">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$980.00</span>
-                    </div>
-                    <div class="shop-item-details">
-                        <button class="btn btn-primary shop-item-button" type="button" >ADD TO CART</button>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- Woodwind Instruments section -->
+    <section class="container content-section">
+      <h2 class="section-header" id="woodwind">Woodwind Instruments</h2>
+      <div class="shop-items">
+        <div class="shop-item">
+          <span class="shop-item-title">Basoon</span>
+          <img class="shop-item-image" src="Woodwind/basoon.png" alt="r1" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$1299.99</span>
+          </div>
+          <div class="shop-item-details">
+            <button
+              class="btn btn-primary shop-item-button"
+              type="button"
+              onclick="showAlert()"
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Clarinet</span>
+          <img class="shop-item-image" src="Woodwind/clarinet.png" alt="r2" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$1155.00</span>
+          </div>
+          <div class="shop-item-details">
+            <button
+              class="btn btn-primary shop-item-button"
+              type="button"
+              onclick="showAlert()"
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Flute</span>
+          <img class="shop-item-image" src="Woodwind/flute.png" alt="r3" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$980.00</span>
+          </div>
+          <div class="shop-item-details">
+            <button
+              class="btn btn-primary shop-item-button"
+              type="button"
+              onclick="showAlert()"
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Oboe</span>
+          <img class="shop-item-image" src="Woodwind/oboe.png" alt="r3" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$980.00</span>
+          </div>
+          <div class="shop-item-details">
+            <button
+              class="btn btn-primary shop-item-button"
+              type="button"
+              onclick="showAlert()"
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Saxophone</span>
+          <img class="shop-item-image" src="Woodwind/saxophone.png" alt="r3" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$980.00</span>
+          </div>
+          <div class="shop-item-details">
+            <button
+              class="btn btn-primary shop-item-button"
+              type="button"
+              onclick="showAlert()"
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Recorder</span>
+          <img class="shop-item-image" src="Woodwind/recorder.png" alt="r3" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$980.00</span>
+          </div>
+          <div class="shop-item-details">
+            <button class="btn btn-primary shop-item-button" type="button">
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!--Cart-->
-        <section class="cont content-section" id="cart">
-            <h2 class="section-header">CART</h2>
-            <div class="cart-row">
-                <span class="cart-item cart-header cart-column">ITEM</span>
-                <span class="cart-price cart-header cart-column">PRICE</span>
-                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
-            </div>
-            <div id="mydiv1" class="cart-items">
-               
-            </div>
-            <div class="cart-total">
-                <strong class="cart-total-title">Total</strong>
-                <span class="cart-total-price">$0</span>
-            </div>
-            <button data-model-target="#model" class="btn btn-warning btn-purchase" type="submit">PURCHASE</button>
-        </section>
+    <!--Cart-->
+    <section class="cont content-section" id="cart">
+      <h2 class="section-header">CART</h2>
+      <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+      </div>
+      <div id="mydiv1" class="cart-items"></div>
+      <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">$0</span>
+      </div>
+      <button
+        data-model-target="#model"
+        class="btn btn-warning btn-purchase"
+        type="submit"
+      >
+        PURCHASE
+      </button>
+    </section>
 
-        <!--footer -->
-        <footer class="footer" id="footer">
+    <!--footer -->
+    <footer class="footer" id="footer">
+      <div class="footer-container">
+        <div class="footer-menu">
+          <ul>
+            <li><a href="../../tashini/index.html">Home</a></li>
+            <li><a href="../../lakdini/Details.html">Our Members</a></li>
+            <li><a href="../../venushi/shop/Shop.html">Shop</a></li>
+            <li><a href="../../SiteMap/PageEditor.html">Site Map</a></li>
+            <li><a href="../../Gallery/menu.html">Gallery</a></li>
+          </ul>
+        </div>
 
-            <div class="footer-container">
-    
-                <div class="footer-menu">
-                    <ul>
-                        <li><a href="../../tashini/index.html">Home</a></li>
-                        <li><a href="../../lakdini/Details.html">Our Members</a></li>
-                        <li><a href="../../venushi/shop/Shop.html">Shop</a></li>
-                        <li><a href="">Site Map</a></li>
-                    </ul>
-                </div>
-    
-                <div class="footer-menu">
-                    <ul>
-                        <li><a href="">Privacy Policy</a></li>
-                        <li><a href="">Refund Policy</a></li>
-                        <li><a href="">Terms of Service</a></li>
-                        <li><a href="">Delivery</a></li>
-                    </ul>
-                </div>
-    
-                <div class="footer-menu">
-    
-                    <h3>Follow Us</h3>
-                    <p>Share your thoughts about us with the community</p>
-    
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                    </div>
-    
-                </div>
-            </div>
-    
-            <div class="copyright">
-                <h5><i class="fa-sharp fa-solid fa-copyright"></i> 2023 Melodyo - All Rights Reserved</h5>
-            </div>
-            
-                <form action="../PageEditor/PageEditor.html" id="editor"><input id="editorbtn" type="submit" value="Page Editor"></form>
-            
-        </footer>
-    
-        <!-- page credits-link to page editor page -->
-        
-    
-    </body>
+        <div class="footer-menu">
+          <ul>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Refund Policy</a></li>
+            <li><a href="">Terms of Service</a></li>
+            <li><a href="">Delivery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-menu">
+          <h3>Follow Us</h3>
+          <p>Share your thoughts about us with the community</p>
+
+          <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://www.twitter.com/" target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="https://www.youtube.com/" target="_blank"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <h5>
+          <i class="fa-sharp fa-solid fa-copyright"></i> 2023 Melodyo - All
+          Rights Reserved
+        </h5>
+      </div>
+
+      <form action="../PageEditor/PageEditor.html" id="editor">
+        <input id="editorbtn" type="submit" value="Page Editor" />
+      </form>
+    </footer>
+
+    <!-- page credits-link to page editor page -->
+  </body>
 </html>
