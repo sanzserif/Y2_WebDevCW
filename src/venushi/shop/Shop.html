@@ -3,14 +3,16 @@
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="">
+        <link rel="icon" href="../../assets/images/MelodyoLOGO.png">
         <title>
-            Shop
+            Shop | Melodyo
         </title>
 
         <link rel="stylesheet" type="text/css" href="store.css"> <!-- linking the css styling document for store page --> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+        <link rel="stylesheet" href="../../common/NavBar/NavStyles.css">
+        <link rel="stylesheet" href="../../common/Footer/FooterStyles.css">
+        
     <script src="https://kit.fontawesome.com/c4254e24a8.js"></script><!-- linking the css styling document for header of the page --> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="store.js" async></script>
@@ -29,19 +31,18 @@
     </head>
     <body>
          <!-- back to top button -->
-        <a type="button" href="#top" id="back-to-top-btn" title="Go to top">&#11014</a>
-        <!-- view cart button-->
-        <a type="button" href="#cart" id="cart-btn" title="View cart">&#128722</a>
-        
+
+         <form  action="#top" ><input type="submit" id="back-to-top-btn" value="&#11014;" ></form>
+         <form  action="#cart" ><input type="submit" id="cart-btn" value="&#128722;" ></form>
 
 <!-- navbar -->
 <nav>
-    <img src="../assets/images/MelodyoLOGO.png" alt="Melodyo">
+    <img src="../../assets/images/MelodyoLOGO.png" alt="Melodyo">
     <ul>
-        <li><a href="../tashini/index.html" class="selectedone">Home</a></li>
-        <li><a href="../tashini/comments_form.html">Comments</a></li>
-        <li><a href="../venushi/shop/Shop.html">Shop</a></li>
-        <li><a href="../lakdini/Quiz.html">Quiz</a></li>
+        <li><a href="../../tashini/index.html" class="selectedone">Home</a></li>
+        <li><a href="../../tashini/comments_form.html">Comments</a></li>
+        <li><a href="../../venushi/shop/Shop.html">Shop</a></li>
+        <li><a href="../../lakdini/Quiz.html">Quiz</a></li>
         <li><a href="#sitemap">Site Map</a></li>
         <li><a href="../lakdini/Details.html">About Us</a></li>
     </ul>
@@ -70,7 +71,7 @@
                 </div>
                 <div class="shop-item">
                     <span class="shop-item-title">French horn</span>
-                    <img class="shop-item-image" src="Brass/french horn.png" alt="m2">
+                    <img class="shop-item-image" src="Brass/frenchHorn.png" alt="m2">
                     <div class="shop-item-details">
                         <span class="shop-item-price">$1600.00</span>
                     </div>
@@ -150,11 +151,11 @@
 
         <!-- Percussion Instruments section -->
         <section class="container content-section">
-            <h2 class="section-header" id="purcussion">Purcussion Insrtruments</h2>
+            <h2 class="section-header" id="purcussion">Percussion Insrtruments</h2>
             <div class="shop-items">
                 <div class="shop-item">
                     <span class="shop-item-title">Base Drum</span>
-                    <img class="shop-item-image" src="Percussion/base drum.png" alt="e1" >
+                    <img class="shop-item-image" src="Percussion/baseDrum.png" alt="e1" >
                     <div class="shop-item-details">
                         <span class="shop-item-price">$2200.00</span>
                     </div>
@@ -242,7 +243,7 @@
                 </div>
                 <div class="shop-item">
                     <span class="shop-item-title">Double Bass</span>
-                    <img class="shop-item-image" src="Strings/double bass.png" alt="a2">
+                    <img class="shop-item-image" src="Strings/doubleBass.png" alt="a2">
                     <div class="shop-item-details">
                         <span class="shop-item-price" onclick="showAlert()">$9.99</span>
                     </div>
@@ -252,7 +253,7 @@
                 </div>
                 <div class="shop-item">
                     <span class="shop-item-title">Electric Guitar</span>
-                    <img class="shop-item-image" src="Strings/electric guitar.png" alt="a2">
+                    <img class="shop-item-image" src="Strings/electricGuitar.png" alt="a2">
                     <div class="shop-item-details">
                         <span class="shop-item-price">$12.99</span>
                     </div>
@@ -388,11 +389,6 @@
             <button data-model-target="#model" class="btn btn-warning btn-purchase" type="submit">PURCHASE</button>
         </section>
 
-<div id="overlay"></div>
-<!--End Of User Detail Form-->
-
-    <script src="userDetailForm.js" async></script>
-
         <!--footer -->
         <footer class="footer" id="footer">
 
@@ -421,15 +417,12 @@
                     <h3>Follow Us</h3>
                     <p>Share your thoughts about us with the community</p>
     
-                    <center>
-                        <div class="social-icons">
-                            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                        </div>
-                    </center>
-    
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
     
                 </div>
             </div>
@@ -437,7 +430,9 @@
             <div class="copyright">
                 <h5><i class="fa-sharp fa-solid fa-copyright"></i> 2023 Melodyo - All Rights Reserved</h5>
             </div>
-    
+            
+                <form action="../PageEditor/PageEditor.html" id="editor"><input id="editorbtn" type="submit" value="Page Editor"></form>
+            
         </footer>
     
         <!-- page credits-link to page editor page -->
