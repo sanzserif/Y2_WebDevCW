@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gallery</title>
+    <link rel="stylesheet" type="text/css" href="./styleMenu.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../common/NavBar/NavStyles.css" />
+    <link rel="stylesheet" href="../SiteMap/PageEditor.css" />
+    <link rel="stylesheet" href="../common/Footer/FooterStyles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script>
+      function changeColor(getColor) {
+        let bg = document.querySelector(".bg");
+        let selectColor = getColor.value;
+        document.body.style.backgroundColor = selectColor;
+      }
+
+      function changeFont(passFont) {
+        let colorFont = document.querySelector(".colorFont");
+        let FontSizeSelect = passFont.value;
+        document.body.style.fontSize = FontSizeSelect;
+      }
+    </script>
+  </head>
+  <body style="background-color: #3d081e">
+      <nav>
+        <img src="../assets/images/MelodyoLOGO.png" alt="Melodyo" />
+        <ul>
+          <li><a href="../tashini/index.html" class="selectedone">Home</a></li>
+          <li><a href="../tashini/comments_form.html">Comments</a></li>
+          <li><a href="../Gallery/menu.html">Gallery</a></li>
+          <li><a href="../venushi/shop/Shop.html">Shop</a></li>
+          <li><a href="../lakdini/Quiz.html">Quiz</a></li>
+          <li><a href="../SiteMap/SiteMap.html">Site Map</a></li>
+          <li><a href="../lakdini/Details.html">About Us</a></li>
+        </ul>
+      </nav>
+    </body>
+   
+    <select class="selectColor" onchange="changeColor(this)">
+      <option selected disabled hidden>Background</option>
+      <option value="#871746">Background-Maroon</option>
+      <option value="#495C7C">Background-Blue</option>
+      <option value="#3A3A3F">Background-Black</option>
+    </select>
+
+    <select class="selectFontSize" onchange="changeFont(this)">
+      <option selected disabled hidden>Font Size</option>
+      <option value="80%">Small</option>
+      <option value="100%">Medium</option>
+      <option value="130%">Large</option>
+    </select>
+
+    <fieldset>
+      <legend>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Piano
+        Legends&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </legend>
+      <section class="gallery-container">
+        <div class="items">
+          <div class="container">
+            <img
+              src="../assets/images/ArtTatum.jpg"
+              alt="Art Tatum"
+              class="img"
+            />
+            <div class="desc">Art Tatum</div>
+            <div class="mid">
+              <div class="text">
+                Tatum was a virtuoso pianist known for his incredible technique,
+                speed, and improvisation skills. He was a major influence on
+                other pianists, including Oscar Peterson and Bill Evans.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="items">
+          <div class="container">
+            <img
+              src="../assets/images/glennGould.jpg"
+              alt="Glenn Gould"
+              class="image"
+            />
+            <div class="desc">Glenn Gould</div>
+            <div class="middle">
+              <div class="text">
+                Gould was a Canadian pianist known for his interpretations of
+                the works of Johann Sebastian Bach. He was known for his
+                precise, almost mechanical playing style, and for his
+                unconventional interpretations of classical music.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="items">
+          <div class="container">
+            <img
+              src="../assets/images/herbieHancock.jpg"
+              alt="Herbie Hancock"
+              class="image"
+            />
+            <div class="desc">Herbie Hancock</div>
+            <div class="middle">
+              <div class="text">
+                AHancock is a jazz pianist and composer known for his fusion of
+                jazz, funk, and rock styles. He has won numerous Grammy Awards
+                and has collaborated with many other musicians throughout his
+                career.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="items">
+          <div class="container">
+            <img
+              src="../assets/images/SergeiRachmaninoff.jpg"
+              alt="Sergei Rachmaninoff"
+              class="image"
+            />
+            <div class="desc">Sergei Rachmaninoff</div>
+            <div class="middle">
+              <div class="text">
+                Rachmaninoff was a Russian composer and pianist known for his
+                Romantic-era music, including his Concerto No. 2 in C Minor. He
+                was also known for his large hands, which allowed him to play
+                complex chords and octaves.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="items">
+          <div class="container">
+            <img src="../assets/images/Sun-Ra.webp" alt="Sun Ra" class="img" />
+            <div class="desc">Sun Ra</div>
+            <div class="mid">
+              <div class="text">
+                Sun Ra was a jazz pianist and composer known for his avant-garde
+                music and his unique approach to performance, which often
+                included elaborate costumes and theatrical elements. He was a
+                major figure in the free jazz movement.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </fieldset>
+
+    <fieldset>
+      <legend style="text-align: center">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Modern Music&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </legend>
+      <section class="gallery-container">
+        <div class="items">
+          <div class="container">
+            <img
+              src="../assets/images/justinTimberlake.webp"
+              alt="Justin Timberlake"
+              class="img"
+            />
+            <div class="desc">Justin Timberlake</div>
+            <div class="mid">
+              <div class="text">
+                Justin Timberlake rose to fame as a member of *NSYNC in the late
+                1990s, but he became a solo superstar in the 2000s with hit
+                songs like "Cry Me a River," "SexyBack," and "Mirrors." He has
+                won numerous Grammy Awards and is known for his smooth vocals,
+                slick dance moves, and charismatic personality.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="items">
+          <div class="container">
+            <img src="../assets/images/adele.jpg" alt="Adele" class="img" />
+            <div class="desc">Adele</div>
+            <div class="mid">
+              <div class="text">
+                Adele burst onto the music scene in the late 2000s with her
+                album "19," which featured the hit song "Chasing Pavements." She
+                became a worldwide sensation in 2011 with her album "21," which
+                featured hit songs like "Rolling in the Deep" and "Someone Like
+                You." She is known for her powerful vocals, emotional lyrics,
+                and soulful sound.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="items">
+          <div class="container">
+            <img src="../assets/images/usher.jpg" alt="Usher" class="img" />
+            <div class="desc">Usher</div>
+            <div class="mid">
+              <div class="text">
+                Usher had already established himself as an R&B superstar in the
+                late 1990s, but he continued to dominate the charts throughout
+                the 2000s with hit songs like "Yeah!," "Burn," and "Confessions
+                Part II." He is known for his smooth vocals, flashy dance moves,
+                and innovative music videos.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="items">
+          <div class="container">
+            <img src="../assets/images/beyonce.jpg" alt="Beyonce" class="img" />
+            <div class="desc">Beyonce</div>
+            <div class="mid">
+              <div class="text">
+                Beyoncé rose to fame as a member of Destiny's Child in the late
+                1990s and early 2000s, but she became a solo superstar in the
+                mid-2000s with hit songs like "Crazy in Love," "Single Ladies
+                (Put a Ring on It)," and "Irreplaceable." She has won numerous
+                Grammy Awards and is known for her powerful vocals, dynamic
+                performances, and empowering messages.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </fieldset>
+
+    <fieldset>
+      <legend style="text-align: center">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Famous
+        Orchestras&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </legend>
+      <section class="gallery-container">
+        <div class="items">
+          <div class="container">
+            <img
+              src="../assets/images/TheYoungPeople'sChorusofNewYorkCity.png"
+              alt="The Young People's Chorus of New York City"
+              class="picture"
+            />
+            <div class="desc">The Young People's Chorus of New York City</div>
+            <div class="middle">
+              <div class="text">
+                The Young People's Chorus of New York City is a youth choir that
+                was founded in 1988. They have performed at a variety of
+                prestigious venues, including Carnegie Hall and the Kennedy
+                Center. They are known for their innovative approach to choral
+                music, incorporating elements of pop, world music, and
+                contemporary classical music into their repertoire.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="items">
+          <div class="container">
+            <img
+              src="../assets/images/TheLondonSymphonyOrchestra.jpg"
+              alt="The London Symphony Orchestra"
+              class="picture"
+            />
+            <div class="desc">The London Symphony Orchestra</div>
+            <div class="middle">
+              <div class="text">
+                The London Symphony Orchestra is one of the world's most
+                renowned orchestras. They have performed at a wide range of
+                venues, including the Barbican Centre in London and Lincoln
+                Center in New York. They are known for their versatility and
+                their ability to perform a wide range of classical and
+                contemporary music.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="items">
+          <div class="container">
+            <img
+              src="../assets/images/TheKronosQuartet.jpg"
+              alt="The Kronos Quartet"
+              class="picture"
+            />
+            <div class="desc">The Kronos Quartet</div>
+            <div class="middle">
+              <div class="text">
+                The Kronos Quartet is a contemporary string quartet founded in
+                1973. They are known for their innovative approach to classical
+                music, incorporating elements of world music, jazz, and rock
+                into their repertoire. They have collaborated with a wide range
+                of artists, from Philip Glass to Bollywood composer A.R. Rahman.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </fieldset>
+
+    <br /><br /><br /><br />
+    
+    <!-- footer section start -->
+    <footer class="footer" id="footer">
+      <div class="footer-container">
+        <div class="footer-menu">
+          <ul>
+            <li><a href="../../tashini/index.html">Home</a></li>
+            <li><a href="../../lakdini/Details.html">Our Members</a></li>
+            <li><a href="../../venushi/shop/Shop.html">Shop</a></li>
+            <li><a href="../SiteMap/SiteMap.html">Site Map</a></li>
+            <li><a href="../../Gallery/menu.html">Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-menu">
+          <ul>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Refund Policy</a></li>
+            <li><a href="">Terms of Service</a></li>
+            <li><a href="">Delivery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-menu">
+          <h3>Follow Us</h3>
+          <p>Share your thoughts about us with the community</p>
+
+          <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://www.twitter.com/" target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="https://www.youtube.com/" target="_blank"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <h5>
+          <i class="fa-sharp fa-solid fa-copyright"></i> 2023 Melodyo - All
+          Rights Reserved
+        </h5>
+      </div>
+      <form action="pageEditor.html" id="editor">
+        <input id="editorbtn" type="submit" value="Page Editor" />
+      </form>
+    </footer>
+    <script src="./menu.js"></script>
+  </body>
+</html>
