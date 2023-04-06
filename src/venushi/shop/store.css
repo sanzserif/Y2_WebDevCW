@@ -147,7 +147,7 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(#871746, #f4f6f8);
+  background: linear-gradient(#871746, rgb(106, 2, 44));
   box-shadow: 0 40px 50px rgba(0, 0, 0, 0.5);
   border-radius: 40px;
 }
@@ -179,7 +179,7 @@ body {
 .shop-item-price {
   flex-grow: 1;
   text-align: center;
-  color: rgb(53, 46, 46);
+  color: rgb(255, 255, 255);
   font-weight: 600;
 }
 
