@@ -80,13 +80,14 @@ div.items {
   align-items: center;
   float: left;
   margin: 14px;
-  border-radius: 8px;
+  border-radius: 10px;
   margin-bottom: 12px;
   transition: transform 0.2s;
   transition: 0.5s ease;
   backface-visibility: hidden;
   display: block;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 1);
+  box-shadow: 0 15px 15px rgba(33, 33, 33, 0.353);
+  backdrop-filter: brightness(50%);
 }
 
 div.items:hover {
@@ -195,8 +196,8 @@ div.desc {
   /* border-right: 5px solid #dd7230; */
   outline: none;
   width: 160px;
-  border-radius: 4px;
-  box-shadow: 0 15px 15px rgba(0, 0, 0, 1);
+  border-radius: 15px;
+  box-shadow: 0 15px 15px rgba(36, 36, 36, 0.352);
 }
 
 .selectColor option {
@@ -214,6 +215,6 @@ div.desc {
   /* border-right: 5px solid #dd7230; */
   outline: none;
   width: 160px;
-  border-radius: 4px;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 1);
+  border-radius: 15px;
+  box-shadow: 0 15px 15px rgba(45, 45, 45, 0.312);
 }
