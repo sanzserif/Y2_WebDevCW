@@ -1,65 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Melodyo</title>
-    <link rel="stylesheet" href="homePageStyles.css" type="text/css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=FredokaOne"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-    />
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="homePageStyles.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=FredokaOne">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
     <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
-  </head>
+    <title>Melodyo</title>
+</head>
 
-  <body>
-    <div class="hero" id="top">
-      <video class="bgvideo" autoplay muted loop playsinline>
-        <source src="08.mp4" />
-      </video>
+<body>
+    <div class="main" id="top">
+        <video class="bgvideo" autoplay muted loop playsinline>
+            <source src="08.mp4">
+        </video>
 
-      <nav>
-        <img src="../assets/images/MelodyoLOGO.png" alt="Melodyo" />
-        <ul>
-          <li><a href="../tashini/index.html" class="selectedone">Home</a></li>
-          <li><a href="../tashini/comments_form.html">Comments</a></li>
-          <li><a href="../venushi/shop/Shop.html">Shop</a></li>
-          <li><a href="../lakdini/Quiz.html">Quiz</a></li>
-          <li><a href="../SiteMap/SiteMap.html">Site Map</a></li>
-          <li><a href="../lakdini/Details.html">About Us</a></li>
-        </ul>
-      </nav>
-      <div class="content">
-        <br /><br /><br /><br /><br />
-        <a href="#para">Explore</a>
-      </div>
-      <h1>Unleash your musical passion today!</h1>
+        <nav>
+            <img src="../assets/images/MelodyoLOGO.png" alt="Melodyo">
+            <ul>
+                <li><a href="../tashini/index.html" class="selectedone">Home</a></li>
+                <li><a href="../tashini/comments_form.html">Comments</a></li>
+                <li><a href="../venushi/shop/Shop.html">Shop</a></li>
+                <li><a href="../lakdini/Quiz.html">Quiz</a></li>
+                <li><a href="#sitemap">Site Map</a></li>
+                <li><a href="../lakdini/Details.html">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <br><br><br><br><br>
+            <a href="#para">Explore</a>
+        </div>
+        <h1>Unleash your musical passion today!</h1>
 
-      <a id="scroll-to-top" href="#top">
-        <i class="fa-solid fa-chevron-up"></i>
-      </a>
-      <p id="para">
-        Welcome to the world of music! Our website is a haven for all music
-        lovers, from those who are just discovering the magic of melodies to
-        seasoned professionals who have spent their lives dedicated to the
-        art.<br />
-        Here, you'll find a vast collection of instruments, sheet music,
-        tutorials, and more, all designed to help you explore and unleash your
-        musical potential. Whether you're into classical, jazz, rock, or any
-        other genre, our website has everything you need to feed your passion
-        and take your musical journey to the next level. <br />So, come on in
-        and join our vibrant community of music enthusiasts. Let's make some
-        beautiful music together!
-      </p>
+        <a id="scroll-to-top" href="#top">
+            <i class="fa-solid fa-chevron-up"></i>
+        </a>
+        <p id="para">
+            Welcome to the world of music! Our website is a haven for all music lovers, from those who are just
+            discovering the magic of melodies to seasoned professionals who have spent their lives dedicated to the
+            art.<br> Here, you'll find a vast collection of instruments, sheet music, tutorials, and more, all designed
+            to help you explore and unleash your musical potential. Whether you're into classical, jazz, rock, or any
+            other genre, our website has everything you need to feed your passion and take your musical journey to the
+            next level. <br>So, come on in and join our vibrant community of music enthusiasts. Let's make some
+            beautiful music together!
+        </p>
     </div>
     <div class="image-container">
       <div class="row">
@@ -127,40 +116,33 @@
             ></a>
           </div>
         </div>
-      </div>
 
-      <div class="copyright">
-        <h5>
-          <i class="fa-sharp fa-solid fa-copyright"></i> 2023 Melodyo - All
-          Rights Reserved
-        </h5>
-      </div>
+        <form action="pageEditor.html" id="editor"><input id="editorbtn" type="submit" value="Page Editor"></form>
 
-      <form action="pageEditor.html" id="editor">
-        <input id="editorbtn" type="submit" value="Page Editor" />
-      </form>
     </footer>
     <script>
-      const image1 = document.getElementById("img1");
-      const image2 = document.getElementById("img2");
-      const image3 = document.getElementById("img3");
-      const image4 = document.getElementById("img4");
+        const image1 = document.getElementById('img1');
+        const image2 = document.getElementById('img2');
+        const image3 = document.getElementById('img3');
+        const image4 = document.getElementById('img4');
 
-      image1.addEventListener("click", () => {
-        window.location.href = "contentPage1.html";
-      });
+        image1.addEventListener('click', () => {
+            window.location.href = "contentPage1.html";
+        });
 
-      image2.addEventListener("click", () => {
-        window.location.href = "contentPage2.html";
-      });
+        image2.addEventListener('click', () => {
+            window.location.href = "contentPage2.html";
+        });
 
-      image3.addEventListener("click", () => {
-        window.location.href = "contentPage3.html";
-      });
+        image3.addEventListener('click', () => {
+            window.location.href = "contentPage3.html";
+        });
 
-      image4.addEventListener("click", () => {
-        window.location.href = "contentPage4.html";
-      });
+        image4.addEventListener('click', () => {
+            window.location.href = "contentPage4.html";
+        });
+
     </script>
-  </body>
+</body>
+
 </html>

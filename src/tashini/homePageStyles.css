@@ -1,12 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
 @import "../css/index.css";
 
-.hero {
-  height: 200vh;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-}
+.main {
+    height: 200vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
 
 /* Styling for navigation bar */
 * {

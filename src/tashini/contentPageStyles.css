@@ -22,7 +22,7 @@ body {
 
 .topic {
     position: absolute;
-    top: 75%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
@@ -49,13 +49,13 @@ body {
     display: block;
 }
 
-h1{
+h1 {
     background-image: linear-gradient(to right, #CB9A9F, #871746);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
 }
-  
+
 #editorbtn {
     color: #fff;
     background-color: #495C7C;
@@ -80,7 +80,11 @@ h1{
     color: black;
 }
 
-#para1,#para2,#para3,#para4,#para5{
+#para1,
+#para2,
+#para3,
+#para4,
+#para5 {
     padding-left: 60px;
     justify-content: left;
     font-weight: 700;
