@@ -42,25 +42,26 @@ video {
 }
 
 #back-to-top-btn {
-  position: fixed;
-  bottom: 300px;
-  right: 25px;
-  font-size: 55px;
-  text-align: 10px;
-  width: 40px;
-  height: 60px;
-  background-color: rgb(255, 255, 255);
-  color: rgb(51, 51, 51);
-  cursor: pointer;
-  outline: none;
-  border: 1px solid #333;
-  border-radius: 50%;
-  transition-duration: 0.4s;
-  transition-timing-function: ease-in-out;
-  z-index: 30;
-  display: inline-flex;
-  align-items: center;
-  padding-left: 3.5px;
+    position: fixed;
+    bottom: 300px;
+    right: 25px;
+    font-size: 45px;
+    text-align: 70px;
+    width: 40px;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(51, 51, 51);
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #333;
+    border-radius: 50%;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    z-index: 30;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 3.5px;
+
 }
 
 #back-to-top-btn:hover {
@@ -87,9 +88,9 @@ body {
 }
 
 .container {
-  max-width: 1500px;
-  margin: 0 auto;
-  padding: 0 1.5em;
+    max-width: 1500px;
+    margin: 100px auto;
+    padding: 0 1.5em;
 }
 
 .cont {
@@ -335,15 +336,6 @@ body {
   position: relative;
 }
 
-input {
-  margin: 20px auto;
-  display: block;
-  width: 50%;
-  padding: 8px;
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 5px;
-}
-
 .close {
   position: absolute;
   top: -10px;
@@ -512,4 +504,30 @@ input {
 #btnPopup:hover {
   background-color: #2d9cdb;
   color: #fff;
+}
+
+#editorbtn {
+    color: #fff;
+    background-color: #495C7C;
+    border-radius: 20px;
+    bottom: 20px;
+    right: 10px;
+    padding: 10px;
+    font-size: 30px;
+}
+
+/* editor button */
+
+#editorbtn:hover {
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#editor {
+    text-decoration: none;
+}
+
+#editor:visited,
+:hover {
+    color: #fff;
 }

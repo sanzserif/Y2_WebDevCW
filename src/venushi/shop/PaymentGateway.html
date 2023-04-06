@@ -3,24 +3,42 @@
 <head>
     <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="../../tashini/Images/Melodyo LOGO.png">
+        
+        <link rel="stylesheet" href="../../common/NavBar/NavStyles.css">
+        <link rel="stylesheet" href="../../common/Footer/FooterStyles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
+    <link rel="icon" href="../../assets/images/MelodyoLOGO.png">
         <title>
-            Checkout
+            Checkout | Melodyo 
         </title>
     <link rel="stylesheet" href="PaymentGateway.css">
     <script src="Checkout.js" async></script>
 </head>
 <body>
+<!-- navbar -->
+    <nav>
+        <img src="../../assets/images/MelodyoLOGO.png" alt="Melodyo">
+        <ul>
+            <li><a href="../../tashini/index.html" class="selectedone">Home</a></li>
+            <li><a href="../../tashini/comments_form.html">Comments</a></li>
+            <li><a href="../../venushi/shop/Shop.html">Shop</a></li>
+            <li><a href="../../lakdini/Quiz.html">Quiz</a></li>
+            <li><a href="#sitemap">Site Map</a></li>
+            <li><a href="../lakdini/Details.html">About Us</a></li>
+        </ul>
+    </nav>
+    
 
-<div class="container">
+<section class="container">
 
-    <form id="userForm" onsubmit="return false" action="">
+    <form id="userForm" onsubmit="return false" >
 
         <div class="row">
 
             <div class="col">
 
-                <h3 class="title"><b><u>Billing address</b></u></h3>
+                <h3 class="title"><b><u>Billing address</u></b></h3>
 
                 <div class="inputBox" id="name">
                     <span><sup class="red-star">*</sup>Full name : </span>
@@ -124,10 +142,55 @@
         </div>
 
         <input type="submit" value="Confirm Order" class="submit-btn" onclick="checkExpYear()">
-        <input type="submit" value="Go Back" class="back-btn" onclick="window.location.href = 'Shop.html'">
+        <input type="submit" value="Go Back" class="back-btn" onclick="history.back()">
+        </div>
+    </form>         
+</section>
+<section>
+<footer class="footer" id="footer">
 
-    </form>
+    <div class="footer-container">
 
-</div>    
+        <div class="footer-menu">
+            <ul>
+                <li><a href="../../tashini/index.html">Home</a></li>
+                <li><a href="../../lakdini/Details.html">Our Members</a></li>
+                <li><a href="../../venushi/shop/Shop.html">Shop</a></li>
+                <li><a href="">Site Map</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-menu">
+            <ul>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Refund Policy</a></li>
+                <li><a href="">Terms of Service</a></li>
+                <li><a href="">Delivery</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-menu">
+
+            <h3>Follow Us</h3>
+            <p>Share your thoughts about us with the community</p>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="copyright">
+        <h5><i class="fa-sharp fa-solid fa-copyright"></i> 2023 Melodyo - All Rights Reserved</h5>
+    </div>
+    
+        <form action="../PageEditor/PageEditor.html" id="editor"><input id="editorbtn" type="submit" value="Page Editor"></form>
+    
+</footer> 
+</section>
 </body>
 </html>

@@ -4,31 +4,19 @@ if(document.readyState=="loading"){     //checking to make sure that this docume
     ready()
 }
 
-var nme = document.getElementById("name");
-var email = document.getElementById("email");
-var address = document.getElementById("address");
-var expYear = document.getElementById("expYear");
-var cvv = document.getElementById("city");
-var cardName = document.getElementById("cardName");
-var cardNo = document.getElementById("cardNo");
-var expYear = document.getElementById("expYear");
+
 
 function checkExpYear(){
-    const form = document.getElementById("userForm");
-    const inputs = form.getElementsByTagName("input");
 
-    for (let i = 0; i < inputs.length; i++) {
-        if (!(inputs[i].value === "")) {
-            if(!(cvv <= 999 && cvv >=100)){
-                alert("please  ");
-            }
+    var nme = document.forms["userForm"]["name"].value;
+var email = document.getElementById("email").value;
+var address = document.getElementById("address").value;
+var cvv = document.getElementById("city").value;
+var cardName = document.getElementById("cardName").value;
+var cardNo = document.getElementById("cardNo").value;
+var expYear = document.getElementById("expYear").value;
 
-        }
-    }
+
 }
-
     
-
-
-
-
+     

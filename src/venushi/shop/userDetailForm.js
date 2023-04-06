@@ -11,7 +11,7 @@ document.getElementsByClassName('btn-purchase')[0].addEventListener('click',chec
                         alertBox.style.padding = "20px";
                         alertBox.style.border = "3px solid black";
                         alertBox.style.position = "fixed";
-                        alertBox.style.top = "50px";
+                        alertBox.style.top = "100px";
                         alertBox.style.right = "40%";
                         alertBox.style.borderRadius = "30px";
                         alertBox.style.background = "linear-gradient(#E5AA70,#E97451)";
