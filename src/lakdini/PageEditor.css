@@ -14,7 +14,7 @@
     text-align: center;
     margin: 50px 400px;
     border: 1px solid rgb(255, 251, 251);
-    box-shadow: 0 0 20px 2px #536a91;
+    box-shadow: 0 0 20px 2px none;
     background: linear-gradient(to left, #8b9dba, #56698c);
     padding: 40px;
     transition: transform 0.5s; 

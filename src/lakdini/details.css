@@ -1,6 +1,3 @@
-/* do not change these styling */
-
-
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap');
 
 *{
@@ -48,7 +45,7 @@ body{
     backface-visibility: hidden;
 }
 
-/*sgould be invisible*/
+/*should be invisible*/
 .card-front {
     background-color:#495C7C;
 }
@@ -143,29 +140,6 @@ h4{
     color: #fff;
 }
 
-/* Nav
-:root {
-    --primary-color: #854d27;
-    --secondary-color: #dd7230;
-    --tertiary-color: #f4c95d;
-    --bg-color-light: #e7e393;
-    --bg-color-dark: #04030f;
-    --color-contrast: white;
-    --color-normal: black;
-    --color-fries: black;
-    --transition-basic: 0.5s ease-in-out;
-}
-
-body.active {
-    --primary-color: black;
-    --secondary-color: #dd7230;
-    --tertiary-color: black;
-    --bg-color-light: #e7e393;
-    --bg-color-dark: #04030f;
-    --color-contrast: black;
-    --color-normal: white;
-    --color-fries: #854d27;
-} */
 
 span {
     color: var(--color-contrast);
@@ -173,149 +147,3 @@ span {
     font-weight: 400;
 } 
 
-/* navbar start
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    box-shadow: 0.5px 0.5px 3px 0.5px rgb(136,136,136);
-    position: fixed;
-    width: 100%;
-    height: 90px;
-    background-color: var(--color-normal);
-    z-index: 1000;
-    top: 0;
-} */
-
-/*thewesite logo*/
-/* .logo {
-    font-size: 40px;
-    font-weight: 700;
-    color: var(--secondary-color);
-    text-transform: uppercase;
-}
-
-.logo .fa-mug-hot {
-    color: var(--bg-color-light);
-    transform: translateY(-5px);
-}
-
-.navbar ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navbar ul a {
-    color: var(--color-contrast);
-    margin: 2px;
-    font-size: 15px;
-    border-radius: 5px;
-    padding: 10px 10px;
-    font-weight: 500;
-    transition: 0.3s ease-in-out;
-    text-transform: uppercase;
-}
-
-.navbar ul li .active,
-.navbar ul li a:hover {
-    background-color: var(--primary-color);
-    color: var(--color-normal);
-    transition: 0.3s ease-in-out;   
-} */
-
-/* #menu-toggle {
-    display: none;
-}
-
-.icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.icons i {
-    cursor: pointer;
-    text-align: center;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 50%;
-    color: #04030f;
-    background-color: var(--bg-color-light);
-    transition: 0.5s ease-out;
-}
-
-.icons i:hover {
-    background-color: #dd7230;
-    color: white;
-    transform: rotate(360deg);
-} */
-
-/* #search-form {
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: -100%;
-    right: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.8);
-    z-index: 10005;
-}
-
-#search-form.active {
-    top: 0;
-}
-
-#search-form input {
-    width: 500px;
-    height: auto;
-    padding: 20px 40px;
-    background-color: transparent;
-    border-bottom: solid white 3px;
-}
-
-#search-form input::placeholder {
-    font-size: 25px;
-    color: white;
-}
-
-#search-form .fa-solid {
-    cursor: pointer;
-    font-size: 35px;
-    color: white;
-}
-
-#search-form .fa-solid.fa-xmark {
-    font-size: 50px;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-}
-
-#search-form .fa-solid:hover {
-    color: var(--secondary-color);
-}
-
-
-.copyright h5 {
-  color: var(--bg-color-light);
-  letter-spacing: 1px;
-} */
-
-
-
-/* @media only screen and (max-width:800px) {
-    .col-2{
-        margin-bottom: 40px;
-    }
-
-    .row{
-        margin-bottom: 0px;
-    }
-} */
