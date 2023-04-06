@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Musical instruments of Modernism period - Melodyo</title>
+    <link rel="stylesheet" href="contentPageStyles.css">
+    <link rel="stylesheet" href="../common/NavBar/NavStyles.css">
+    <link rel="stylesheet" href="../common/Footer/FooterStyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
+</head>
+
+<body>
+    <nav>
+        <img src="../assets/images/MelodyoLOGO.png" alt="Melodyo">
+        <ul>
+            <li><a href="../tashini/index.html" class="selectedone">Home</a></li>
+            <li><a href="../tashini/comments_form.html">Comments</a></li>
+            <li><a href="../venushi/shop/Shop.html">Shop</a></li>
+            <li><a href="../lakdini/Quiz.html">Quiz</a></li>
+            <li><a href="#sitemap">Site Map</a></li>
+            <li><a href="../lakdini/Details.html">About Us</a></li>
+        </ul>
+    </nav>
+    <div class="center">
+        <img src="../assets/images/Punk.jpg" alt="Image" onclick="showContent()">
+        <div class="topic">Musical instruments of Modernism period</div>
+    </div>
+
+    <div class="content" id="content">
+        <h1>Musical instruments of Modernism period</h1>
+        <p>From the late 19th through the middle of the 20th century, the Modernism era saw a great deal of innovation
+            and experimentation in music, art, and culture. In order to provide fresh and intriguing sounds, musical
+            instruments were also changed and redesigned throughout this time. Throughout the Modernism era, the
+            following musical instruments were common:<br><br>
+            <span id="para1">
+                &#x2022; Saxophone: The saxophone, which was created in the middle of the 19th century, rose to
+                popularity throughout the Modernism era. Jazz, classical music, and pop music were among the musical
+                genres that utilized it. The saxophone is a versatile instrument with a distinctive sound produced by
+                blowing air through a reed.<br><br>
+            </span>
+            <span id="para2">
+                &#x2022; Electric guitar: The invention of the electric guitar at the turn of the 20th century
+                completely altered the sound of popular music. It creates sound by amplifying electrical signals through
+                a speaker from the vibrating of its strings. Rock, blues, jazz, and pop are just a few of the musical
+                genres that have included the electric guitar.<br><br>
+            </span>
+            <span id="para3">
+                &#x2022; Theremin: Created in the 1920s, the theremin is an electronic instrument that is played
+                virtually. The movement of the player's hands near two antennae is detected and turns into sound.
+                Theremins have been employed in a variety of musical genres, including experimental music and movie
+                soundtracks, and they have a distinctive, otherworldly sound.<br><br>
+            </span>
+            <span id="para4">
+                &#x2022; Drum kit: During the Modernism era, the drum kit, which includes of numerous drums and cymbals
+                played by a single drummer, gained popularity. Jazz, rock, and pop were among the musical genres that
+                utilised it. Since then, polyrhythms and complicated rhythms have been produced with the drum set, which
+                has become a mainstay of popular music.<br><br>
+            </span>
+            <span id="para5">
+                &#x2022; Synthesizer: Created in the middle of the 20th century, the synthesizer is an electronic device
+                that creates and manipulates electrical impulses to make sound. Rock, pop, and electronic music, among
+                other styles of music, have all employed it. The synthesizer has been an important tool for developing
+                fresh sounds, and it has been used to produce a wide range of sounds, from sweeping, beautiful
+                soundscapes to loud, abrasive noise.<br><br>
+            </span>
+            In general, the design and use of musical instruments underwent substantial innovation and experimentation
+            during the Modernism era. Several of the instruments that were popular at the time are still employed in
+            music today, and a range of musical styles can be heard where their influence can be felt
+        </p>
+    </div>
+
+    <footer class="footer" id="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="../../tashini/index.html">Home</a></li>
+                    <li><a href="../../lakdini/Details.html">Our Members</a></li>
+                    <li><a href="../../venushi/shop/Shop.html">Shop</a></li>
+                    <li><a href="">Site Map</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Refund Policy</a></li>
+                    <li><a href="">Terms of Service</a></li>
+                    <li><a href="">Delivery</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-menu">
+
+                <h3>Follow Us</h3>
+                <p>Share your thoughts about us with the community</p>
+
+                <center>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </center>
+
+
+            </div>
+        </div>
+
+        <div class="copyright">
+            <h5><i class="fa-sharp fa-solid fa-copyright"></i> 2023 Melodyo - All Rights Reserved</h5>
+        </div>
+
+    </footer>
+
+    <script>
+        function showContent() {
+            document.getElementById("content").classList.toggle("show");
+            // window.scrollBy(0, window.innerHeight);
+            scrollDownByIncrement(10, 20, window.innerHeight);
+
+            function scrollDownByIncrement(increment, interval, maxScroll) {
+                let currentScroll = window.scrollY;
+                if (currentScroll + increment < maxScroll) {
+                    window.scrollBy(0, increment);
+                    setTimeout(function () {
+                        scrollDownByIncrement(increment, interval, maxScroll);
+                    }, interval);
+                } else {
+                    window.scrollTo(0, maxScroll);
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
