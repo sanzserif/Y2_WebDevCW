@@ -8,12 +8,13 @@
     scroll-behavior: smooth;
 }
 
-.hero {
+.main {
     height: 200vh;
     width: 100%;
     background-size: cover;
     background-position: center;
 }
+
 
 /* Styling for navigation bar */
 nav {

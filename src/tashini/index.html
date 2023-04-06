@@ -5,16 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Melodyo</title>
+
     <link rel="stylesheet" href="homePageStyles.css" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=FredokaOne">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
     <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
+    <title>Melodyo</title>
 </head>
 
 <body>
-    <div class="hero" id="top">
+    <div class="main" id="top">
         <video class="bgvideo" autoplay muted loop playsinline>
             <source src="08.mp4">
         </video>
@@ -116,33 +117,33 @@
         <div class="copyright">
             <h5><i class="fa-sharp fa-solid fa-copyright"></i> 2023 Melodyo - All Rights Reserved</h5>
         </div>
-        
-            <form action="pageEditor.html" id="editor"><input id="editorbtn" type="submit" value="Page Editor"></form>
-        
+
+        <form action="pageEditor.html" id="editor"><input id="editorbtn" type="submit" value="Page Editor"></form>
+
     </footer>
-        <script>
-            const image1 = document.getElementById('img1');
-            const image2 = document.getElementById('img2');
-            const image3 = document.getElementById('img3');
-            const image4 = document.getElementById('img4');
+    <script>
+        const image1 = document.getElementById('img1');
+        const image2 = document.getElementById('img2');
+        const image3 = document.getElementById('img3');
+        const image4 = document.getElementById('img4');
 
-            image1.addEventListener('click', () => {
-                window.location.href = "contentPage1.html";
-            });
+        image1.addEventListener('click', () => {
+            window.location.href = "contentPage1.html";
+        });
 
-            image2.addEventListener('click', () => {
-                window.location.href = "contentPage2.html";
-            });
+        image2.addEventListener('click', () => {
+            window.location.href = "contentPage2.html";
+        });
 
-            image3.addEventListener('click', () => {
-                window.location.href = "contentPage3.html";
-            });
+        image3.addEventListener('click', () => {
+            window.location.href = "contentPage3.html";
+        });
 
-            image4.addEventListener('click', () => {
-                window.location.href = "contentPage4.html";
-            });
+        image4.addEventListener('click', () => {
+            window.location.href = "contentPage4.html";
+        });
 
-        </script>
+    </script>
 </body>
 
 </html>
